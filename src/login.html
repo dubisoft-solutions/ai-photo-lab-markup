@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lv">
+//= html_partials/head.html
+
+<body class="position-relative" data-bs-theme="dark">
+    <main>
+        <div class="main">
+            <section class="banner">
+                <!-- Header -->
+                //= html_partials/header-v2.html
+                <img src="img/wifi-bg.png" alt="Banner image" class="banner-bg">
+                <div class="banner-shadow text-lg-center text-start">
+                    
+                </div>
+            </section>
+            <!-- Main section -->
+            <div class="hero mt-lg-5 mt-4 pt-lg-5 pt-2 pb-5">
+                <div class="container">
+                    <div class="row justify-content-center pt-lg-7 pt-0">
+                        <div class="col-lg-7 col-11 mb-4">
+                            <form method="get" action="success.html" class="needs-validation" novalidate>
+                                <input type="text" pattern="[0-9]*" class="form-control text-center mb-2" id="inputPhoneNumber" placeholder="XXX XX XX XX" minlength="9" maxlength="9" required>
+    
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg d-flex justify-content-center align-items-center mb-2">Login</button>
+                                </div>
+                                <p class="text-center">XX/Week</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        //= html_partials/footer.html
+    </main>
+</body>
+
+//= html_partials/scripts.html
+
+</html>

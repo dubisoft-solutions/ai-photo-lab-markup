@@ -1,0 +1,47 @@
+.btn {
+    --bs-btn-font-size: 1.125rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: .875rem;
+    --bs-btn-border-radius: 1.875rem;
+    --bs-btn-color: $light-gray!important;
+    
+    @include media-breakpoint-down(lg) {
+        --bs-btn-font-size: 1rem;
+    }
+}
+
+.btn-primary {
+    color: $light-gray!important;
+    background: $gradient-blue!important;
+    border: none;
+}
+
+.btn-outline-primary {
+    color: $light-gray!important;
+    background: linear-gradient($black, $black) padding-box,
+              linear-gradient(to right, #1254FF, #2EF2FF) border-box;
+    border-radius: 1.875rem;
+    border: 1px solid transparent;
+}
+
+.btn-link {
+    font-size: 1rem;
+    padding: 0;
+    @include media-breakpoint-down(lg) {
+        font-size: .875rem;
+    }
+}
+
+.btn-dark {
+    --bs-btn-color: $light-gray;
+    --bs-btn-hover-color: $light-gray;
+    --bs-btn-font-size: .75rem;
+}
+
+.footer {
+    .btn-link {
+        font-size: .75rem;
+        color: $light-gray;
+        padding: 0;
+    }
+}

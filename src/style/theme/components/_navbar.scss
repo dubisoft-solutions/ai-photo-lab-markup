@@ -1,0 +1,110 @@
+$navbar-height: 4.25rem;
+$navbar-height-sm: 2rem;
+.navbar {
+    --navbar-height: #{$navbar-height};
+    background: transparent;
+    border: none;
+    padding: .25rem 0;
+    min-height: 4.25rem;
+    @include media-breakpoint-down(md) {
+        --navbar-height: #{$navbar-height-sm};
+    }
+    .navbar-brand-img {
+        width: 8.85rem;
+        @include media-breakpoint-down(md) {
+            width: 6.85rem;
+        }
+    }
+    &.menu-visible {
+        background: $black;
+    }
+    min-height: var(--navbar-height);
+    .navbar-toggler {
+        color: $white;
+        padding: 0;
+        border: 0;
+        .dropdown-icon-open {
+            display: inline-block;
+        }
+        .dropdown-icon-close {
+            display: none;
+        }
+        &:before {
+            position: fixed;
+            top: var(--navbar-height);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(36, 39, 50, 0.7);
+            content: '';
+            z-index: 1;
+        }
+        &.collapsed {
+            .dropdown-icon-open {
+                display: none;
+            }
+            .dropdown-icon-close {
+                display: inline-block;
+            }
+            &:before {
+                display: none;
+            }
+        }
+        &::after {
+            display: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .navbar-nav {
+        &.dropdown-menu {
+            background-color: transparent;
+        }
+        @include media-breakpoint-down(lg) {
+            &.dropdown-menu {
+                position: fixed;
+                right: 0;
+                left: 0;
+                top: var(--navbar-height);
+                margin-top: 0;
+                max-height: calc(100vh - var(--navbar-height));
+                overflow-y: scroll;
+                border-top: 0;
+                background-color: $black;
+                box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(25px);
+                &.show {
+                    background: $black;
+                }
+                .dropdown-item {
+                    font-size: 1.25rem;
+                    color: $light-gray;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    &:focus,
+                    &:hover,
+                    &:active {
+                        background: none;
+                    }
+                }
+                position: absolute;
+                top: var(--navbar-height);
+            }
+        }
+    }
+    &.scrolled {
+        background-color: $black;
+    }
+    .collapsing {
+        -webkit-transition: none;
+        transition: none;
+        display: none;
+    }
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: auto;
+    right: 0;
+}

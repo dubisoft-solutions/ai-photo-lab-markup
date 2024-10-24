@@ -1,0 +1,149 @@
+@import "bootstrap-select/sass/variables";
+@import "bootstrap-select/sass/bootstrap-select";
+.bootstrap-select {
+    .dropdown-toggle.btn-light {
+        border: none;
+        background-color: $white;
+        padding: 1.065rem 1.5rem;
+        font-size: .875rem;
+        font-family: $font-family-sans-serif;
+        color: $dark-gray;
+        border-radius: 1.875rem;
+        &::placeholder {
+            color: $dark-gray;
+            @include media-breakpoint-down(md) {
+                font-size: .813rem!important;
+            }
+        }
+        &::after {
+            @include icon-styles;
+            content: icon-char(arrow-down);
+            color: $black-20;
+            font-size: .5rem;
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+        }
+        &:focus {
+            outline: none!important;
+            outline-offset: none!important;
+            box-shadow: none;
+        }
+        &.show,
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $white!important;
+        }
+    }
+    .dropdown-toggle {
+        &.show {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &>.dropdown-menu {
+        background: linear-gradient(152.98deg, rgba(255, 255, 255, 0.2) 14.8%, rgba(255, 255, 255, 0.01) 87.76%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+        border: none;
+        --bs-dropdown-padding-y: .0.625rem;
+        --bs-dropdown-padding-x: -1rem;
+        ul {
+            background-color: $white;
+            &.show {
+                color: $dark-gray;
+                background-color: $white;
+                border: none;
+                border-radius: .563rem;
+            }
+            .dropdown-item {
+                font-size: 1rem;
+                color: $dark-gray;
+                padding: .813rem 1rem;
+                background-color: $white;
+                &.active,
+                &:hover,
+                &:focus {
+                    color: $dark-gray;
+                    background: $gray-202;
+                    opacity: 0.8;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+    &.contact {
+        .dropdown-toggle.btn-light {
+            border: none;
+            background-color: $dark-blue;
+            color: $dark-gray;
+            border-radius: .563rem;
+            &.show,
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: $dark-blue!important;
+            }
+        }
+        &>.dropdown-menu {
+            background: linear-gradient(152.98deg, rgba(255, 255, 255, 0.2) 14.8%, rgba(255, 255, 255, 0.01) 87.76%);
+            box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+            border: none;
+            --bs-dropdown-padding-y: .0.625rem;
+            --bs-dropdown-padding-x: -1rem;
+            ul {
+                background-color: $dark-blue;
+                &.show {
+                    color: $dark-gray;
+                    background-color: $dark-blue;
+                    border: none;
+                    border-radius: .563rem;
+                }
+                .dropdown-item {
+                    font-size: 1rem;
+                    color: $dark-gray;
+                    padding: .813rem 1rem;
+                    background-color: $dark-blue;
+                    &.active,
+                    &:hover,
+                    &:focus {
+                        color: $dark-gray;
+                        background: $dark-blue;
+                        opacity: 0.8;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bootstrap-select .bs-ok-default:after {
+    display: none;
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder {
+    font-size: 1rem!important;
+    color: $dark-gray;
+    @include media-breakpoint-down(md) {
+        font-size: .875rem!important;
+        color: $dark-gray!important;
+    }
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    font-size: 1rem!important;
+    color: $dark-gray;
+    @include media-breakpoint-down(md) {
+        font-size: .875rem!important;
+    }
+}

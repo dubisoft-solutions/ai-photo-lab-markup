@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lv">
+//= html_partials/head.html
+
+<body class="wifi position-relative" data-bs-theme="dark">
+    <main>
+        <div class="main">
+            <section class="banner">
+                <!-- Header -->
+                //= html_partials/header-v2.html
+                <img src="img/wifi-bg.png" alt="Banner image" class="banner-bg">
+                <div class="banner-shadow text-lg-center text-start">
+                    <span class="badge text-bg-warning mb-3">Ai technology</span>
+                    <h1 class="text-capitalize">Unleash the Power of <span class="d-lg-block d-inline"><span class="text-gradient-primary">AI</span> for <span class="text-gradient-primary">Stunning Visuals</span></span></h1>
+                </div>
+            </section>
+            <!-- Main section -->
+            <div class="hero pt-5 mt-lg-5 mt-2 pb-2">
+                <div class="container">
+                    <div class="row justify-content-center pt-lg-7 pt-0">
+                        <div class="col-lg-7 col-11 mb-4 pb-3">
+                            <form method="get" action="thank-you.html" class="needs-validation" novalidate>
+                                <p class="text-white mb-3">Enter your phone number:</p>
+                                <input type="text" pattern="[0-9]*" class="form-control text-center mb-2" id="inputPhoneNumber" placeholder="XXX XX XX XX" minlength="9" maxlength="9" required>
+    
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg d-flex justify-content-center align-items-center mb-2">Continue</button>
+                                </div>
+                                <p class="text-center">XX/Week</p>
+                            </form>
+                        </div>
+                       
+                        <div class="col-lg-7 col-11">
+                            <p class="lh-1 mb-3">AI Photo Lab is a subscription-based service offering fun filters, AI-powered video effects, and advanced photo editing tools. </p>
+                            <p class="lh-1 mb-3">By subscribing to our service, you agree to be charged through your mobile carrier. </p>
+                            <p class="lh-1 mb-3">Charges may apply on a daily or weekly basis, depending on the subscription plan you select.</p>
+
+                            <p class="lh-1 mb-3">You can cancel your subscription at any time through following the cancellation instructions provided in the store. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        //= html_partials/footer.html
+    </main>
+</body>
+
+//= html_partials/scripts.html
+
+</html>

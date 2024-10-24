@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="lv">
+//= html_partials/head.html
+
+<body class="position-relative" data-bs-theme="dark">
+    <main>
+        <!-- Header -->
+        //= html_partials/header.html
+
+        <div class="main">
+            <section class="category mt-lg-5 pt-lg-5 mt-5 pt-4 pb-5 mb-5">
+                <div class="container">
+                    <a href="home.html">
+                        <div class="d-flex align-items-center pt-lg-4 pb-lg-5 mb-lg-4 pb-5">
+                            <div class="icon-style rounded-circle d-flex justify-content-center align-items-center me-3">
+                                <icon class="icon icon-prev text-dark fs-4 d-grid"></icon>
+                            </div>
+                            <h3 class="mb-0 scroll-to-top-marker">Account</h3>
+                        </div>
+                    </a>
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5 col-12 mb-lg-0 mb-5">
+                            <h3 class="fs-8 fw-bold mb-4 text-start">Credit balance:</h3>
+                            
+                            <h3 class="fs-8 fw-bold mt-5 mb-4 text-start">Subscription:</h3>
+                            <p class="mb-3">You are subscribed to Ai Photo Lab since <span class="text-primary">XX/XX/XX.</span></p>
+                            <p class="mb-5">If you wish to unsubscribe click on the link below. If you unsubscribe, you will no longer have access to your files created with Ai Photo Lab.</p>
+
+                            <div class="text-center">
+                                <a class="btn-link text-primary btn-sm" data-bs-toggle="modal" data-bs-target="#liveSubscription">Unsubscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            //= html_partials/footer-v2.html
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <p class="modal-title mb-lg-5 mb-4">Are you sure you want to unsubscribe? <br>You’ll lose access to all premium features</p>
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-primary mb-2" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-link fw-bold" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="liveSubscriptionConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionConfirmedLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <p class="modal-title mb-4 text-center">You are no longer member of AI Photo Lab.
+                        <br>Please continue your visit at our homepage.  </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="d-grid">
+                                <a href="home.html" class="btn btn-primary">Homepage</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+//= html_partials/scripts.html
+
+</html>

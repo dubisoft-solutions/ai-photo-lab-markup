@@ -1,0 +1,166 @@
+$font-icons-family-name: "IconsFont";
+@font-face {
+	font-family: "IconsFont";
+	src: url('../fonts/IconsFont.eot');
+	src: url('../fonts/IconsFont.eot?#iefix') format('eot'),
+		url('../fonts/IconsFont.woff2') format('woff2'),
+		url('../fonts/IconsFont.woff') format('woff'),
+		url('../fonts/IconsFont.ttf') format('truetype'),
+		url('../fonts/IconsFont.svg#IconsFont') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "IconsFont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+$icon-name-arrow-down: "\E001"; 
+$icon-name-arrow-right: "\E002"; 
+$icon-name-arrow-top: "\E003"; 
+$icon-name-basketball: "\E004"; 
+$icon-name-check: "\E005"; 
+$icon-name-clock: "\E006"; 
+$icon-name-close: "\E007"; 
+$icon-name-football: "\E008"; 
+$icon-name-menu-close: "\E009"; 
+$icon-name-menu-open: "\E00A"; 
+$icon-name-menu: "\E00B"; 
+$icon-name-minus: "\E00C"; 
+$icon-name-plus-circle: "\E00D"; 
+$icon-name-plus: "\E00E"; 
+$icon-name-prev: "\E00F"; 
+$icon-name-racquet: "\E010"; 
+$icon-name-user: "\E011"; 
+
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == arrow-down {
+		$char: "\E001";
+	}
+	@if $filename == arrow-right {
+		$char: "\E002";
+	}
+	@if $filename == arrow-top {
+		$char: "\E003";
+	}
+	@if $filename == basketball {
+		$char: "\E004";
+	}
+	@if $filename == check {
+		$char: "\E005";
+	}
+	@if $filename == clock {
+		$char: "\E006";
+	}
+	@if $filename == close {
+		$char: "\E007";
+	}
+	@if $filename == football {
+		$char: "\E008";
+	}
+	@if $filename == menu-close {
+		$char: "\E009";
+	}
+	@if $filename == menu-open {
+		$char: "\E00A";
+	}
+	@if $filename == menu {
+		$char: "\E00B";
+	}
+	@if $filename == minus {
+		$char: "\E00C";
+	}
+	@if $filename == plus-circle {
+		$char: "\E00D";
+	}
+	@if $filename == plus {
+		$char: "\E00E";
+	}
+	@if $filename == prev {
+		$char: "\E00F";
+	}
+	@if $filename == racquet {
+		$char: "\E010";
+	}
+	@if $filename == user {
+		$char: "\E011";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-arrow-down {
+	@include icon(arrow-down);
+}
+.icon-arrow-right {
+	@include icon(arrow-right);
+}
+.icon-arrow-top {
+	@include icon(arrow-top);
+}
+.icon-basketball {
+	@include icon(basketball);
+}
+.icon-check {
+	@include icon(check);
+}
+.icon-clock {
+	@include icon(clock);
+}
+.icon-close {
+	@include icon(close);
+}
+.icon-football {
+	@include icon(football);
+}
+.icon-menu-close {
+	@include icon(menu-close);
+}
+.icon-menu-open {
+	@include icon(menu-open);
+}
+.icon-menu {
+	@include icon(menu);
+}
+.icon-minus {
+	@include icon(minus);
+}
+.icon-plus-circle {
+	@include icon(plus-circle);
+}
+.icon-plus {
+	@include icon(plus);
+}
+.icon-prev {
+	@include icon(prev);
+}
+.icon-racquet {
+	@include icon(racquet);
+}
+.icon-user {
+	@include icon(user);
+}

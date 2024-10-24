@@ -1,0 +1,87 @@
+.form-control {
+    color: $black;
+    &::placeholder {
+        font-size: 1rem;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &.contact {
+        border: none;
+        font-size: .875rem;
+        padding: 1.065rem 1.5rem;
+        &::placeholder {
+            font-size: .875rem;
+            color: $dark-gray;
+        }
+    }
+}
+
+.form-label {
+    font-size: 1rem;
+    color: $white;
+    margin-bottom: 1rem;
+}
+
+.invalid-feedback {
+    font-weight: 300;
+    @include media-breakpoint-down(md) {
+        font-size: .75rem;
+    }
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    box-shadow: none;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-image: none;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    border-color: transparent;
+    background-image: none;
+    padding-right: 0;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+    border-color: transparent;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    border-color: transparent;
+}
+
+.invalid-feedback {
+    text-align: start;
+    padding-left: 3rem;
+    margin-top: .125rem;
+}
+
+.invalid-tooltip {
+    padding: .938rem 1.5rem;
+    background-color: #fd5732;
+    color: $white;
+    font-size: .875rem;
+    border-radius: .188rem;
+    margin-top: .438rem;
+    @include media-breakpoint-down(md) {
+        font-size: .625rem;
+    }
+    top: initial;
+    bottom: calc(100% + 0.75rem);
+    left: calc(var(--bs-gutter-x) * .5);
+}
+
+.form-control.contact.is-invalid,
+.was-validated .form-control.contact:invalid {
+    border: 2px solid #fd5732;
+    padding: 1.063rem 1rem;
+}
