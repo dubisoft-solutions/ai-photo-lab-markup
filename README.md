@@ -2,9 +2,9 @@
 
 Markup project created by figma design.
 
-Demo link [url](https://dubisoft-solutions.github.io/playwing-sports-store/ "Demo project link")
+Demo link [url](https://dubisoft-solutions.github.io/ai-photo-lab-markup/ "Demo project link")
 
-RTL version: [url](https://dubisoft-solutions.github.io/playwing-sports-store/?rtl=true "Demo rtl project link")
+RTL version: [url](https://dubisoft-solutions.github.io/ai-photo-lab-markup/?rtl=true "Demo rtl project link")
 
 ## Project structure ##
 
