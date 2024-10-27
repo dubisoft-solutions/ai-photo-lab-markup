@@ -16,6 +16,17 @@
     }
 }
 
+.img-lg {
+    min-width: 31.25rem;
+    width: 100%;
+    height: 43.75rem;
+    object-fit: cover;
+    border-radius: 240px 0 240px 0;
+    @include media-breakpoint-up(xxxxl) {
+        height: 70.75rem;
+    }
+}
+
 .icon-style {
     background-color: $white;
     width: 1.5rem;
@@ -206,29 +217,29 @@
         right: 0;
         left: 0;
     }
-    .check-block {
-        top: -3.125rem;
-        left: 0;
-        right: 0;
+}
+
+.check-circle {
+    width: 11.313rem;
+    height: 11.313rem;
+    background-color: $white;
+    border: 1px solid $white;
+    position: absolute;
+    bottom: 3.875rem;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    .icon-style {
+        font-size: 5.25rem;
+        justify-content: center;
+        align-content: center;
+        @include media-breakpoint-down(md) {
+            font-size: 3rem;
+        }
     }
-    .check-circle {
+    @include media-breakpoint-down(md) {
         width: 5.125rem;
         height: 5.125rem;
-        background-color: $white;
-        border: 1px solid $white;
-        position: absolute;
-        bottom: 3.875rem;
-        right: 0;
-        left: 0;
-        z-index: 1;
-        .icon-style {
-            font-size: 3.125rem;
-            justify-content: center;
-            align-content: center;
-            @include media-breakpoint-down(md) {
-                font-size: 2.813rem;
-            }
-        }
     }
 }
 
@@ -254,10 +265,10 @@
     }
 }
 
-.wifi-operator {
+.wifi-error {
     .banner {
         position: relative;
-        height: 72vw;
+        height: 86vw;
         @media (min-width: 576px) {
             height: 98vw;
         }
@@ -269,6 +280,49 @@
         }
         @media (min-width: 1200px) {
             height: 580px;
+        }
+    }
+    .banner-shadow {
+        height: 100px;
+    }
+}
+
+.wifi-operator {
+    .banner {
+        position: relative;
+        height: 85vw;
+        @media (min-width: 576px) {
+            height: 98vw;
+        }
+        @media (min-width: 768px) {
+            height: 740px;
+        }
+        @media (min-width: 992px) {
+            height: 480px;
+        }
+        @media (min-width: 1200px) {
+            height: 580px;
+        }
+        .banner-shadow {
+            background: linear-gradient(359.98deg, #0F1217 14.72%, rgba(15,18,23, 0.57) 55.54%, rgba(15, 18, 23, 0) 92.63%);
+            width: 100%;
+            height: 142px;
+            position: absolute;
+            bottom: 0;
+            padding: 0 1.5rem;
+            .banner-logo {
+                height: .875rem;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @media (min-width: 576px) {
+                    height: 1.5rem;
+                }
+            }
+            @media (min-width: 576px) {
+                height: 200px;
+            }
         }
     }
 }

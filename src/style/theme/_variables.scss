@@ -19,10 +19,9 @@ $body-color-dark: $dark-gray;
 $body-bg-dark: $black;
 $link-color-dark: $dark-gray;
 // buttons
-$btn-font-weight: 500;
-$btn-font-size: 1rem;
+$btn-font-size: 1.25rem;
 $btn-padding-x: 2rem;
-$btn-padding-y: .875rem;
+$btn-padding-y: 1.095rem;
 $btn-border-radius: 1.875rem;
 $btn-color: $light-gray!default;
 $btn-link-color: $dark-gray;
@@ -30,23 +29,22 @@ $btn-link-hover-color: $blue;
 // font sizes
 $font-size-base: 1rem;
 $line-height-base: 1.5;
-$h1-font-size: 4.5rem;
+$h1-font-size: 3.313rem;
 $h2-font-size: 2.5rem;
 $h3-font-size: 1.125rem;
 $h4-font-size: 1rem;
 $headings-line-height: 1;
 $headings-font-weight: bold;
 $headings-color: $light-gray;
-$font-weight-medium: 500;
-$font-sizes: ( 1: 1.5rem, 2: 1.125rem, 3: .875rem, 4: .75rem)!default;
+$font-sizes: ( 1: 1.5rem, 2: 1rem, 3: .875rem, 4: .75rem)!default;
 $spacer: 1rem;
-$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 14.375);
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 7.188);
 // break points
 $grid-breakpoints: (xxc:0, xs: 390px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px, xxxl: 1548px, xxxxl: 1920px, xxxxxl: 2560px);
 // containers
-$container-max-widths: (xc: 100%, sm: 540px, md: 720px, lg: 960px, xl: 1160px, xxl: 1212px, xxxl: 1375px, xxxxl: 1747px, xxxxxl: 2387px);
+$container-max-widths: (xc: 100%, sm: 540px, md: 720px, lg: 960px, xl: 1160px, xxl: 1236px, xxxl: 1375px, xxxxl: 1747px, xxxxxl: 2387px);
 // dropdown
-$gradient-blue: linear-gradient(100deg, #1254FF 45%, #2EF2FF 130%);
+$gradient-blue: linear-gradient(116.97deg, #1254FF -16.64%, #2EF2FF 154.41%);
 $dropdown-padding-x: 1rem;
 $dropdown-padding-y: 3.35rem;
 $dropdown-item-padding-y: 1rem;
@@ -61,11 +59,10 @@ $dropdown-link-hover-bg: transparent;
 $dropdown-link-active-bg: transparent;
 $dropdown-border-color: transparent;
 // input
-$input-padding-y: .845rem;
+$input-padding-y: 1.22rem;
 $input-padding-x: 1.5rem;
 $input-font-size: 1rem;
 $input-bg: $light-gray;
-$input-font-weight: 500;
 $input-color: $dark-gray;
 $input-placeholder-color: $dark-gray;
 $input-border-color: $light-gray;

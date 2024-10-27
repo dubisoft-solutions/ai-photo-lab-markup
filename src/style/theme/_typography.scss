@@ -8,10 +8,6 @@ p {
     }
 }
 
-.fw-500 {
-    font-weight: $font-weight-medium;
-}
-
 .display-1 {
     font-size: 10.875rem;
     @include media-breakpoint-down(lg) {

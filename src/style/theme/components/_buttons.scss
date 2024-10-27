@@ -1,12 +1,13 @@
 .btn {
-    --bs-btn-font-size: 1.125rem;
+    --bs-btn-font-size: 1.25rem;
     --bs-btn-padding-x: 2rem;
-    --bs-btn-padding-y: .875rem;
+    --bs-btn-padding-y: 1.095rem;
     --bs-btn-border-radius: 1.875rem;
     --bs-btn-color: $light-gray!important;
     
     @include media-breakpoint-down(lg) {
         --bs-btn-font-size: 1rem;
+        --bs-btn-padding-y: .91rem;
     }
 }
 
