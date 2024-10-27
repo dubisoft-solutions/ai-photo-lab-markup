@@ -220,8 +220,8 @@
 }
 
 .check-circle {
-    width: 11.313rem;
-    height: 11.313rem;
+    width: 5.125rem;
+    height: 5.125rem;
     background-color: $white;
     border: 1px solid $white;
     position: absolute;
@@ -230,16 +230,18 @@
     left: 0;
     z-index: 1;
     .icon-style {
-        font-size: 5.25rem;
+        font-size: 3rem;
         justify-content: center;
         align-content: center;
-        @include media-breakpoint-down(md) {
-            font-size: 3rem;
+        @include media-breakpoint-up(lg) {
+            font-size: 5.25rem;
         }
     }
-    @include media-breakpoint-down(md) {
-        width: 5.125rem;
-        height: 5.125rem;
+    @include media-breakpoint-up(lg) {
+        position: relative;
+        bottom: 0;
+        width: 11.313rem;
+        height: 11.313rem;
     }
 }
 
