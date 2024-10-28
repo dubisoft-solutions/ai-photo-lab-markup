@@ -1,16 +1,16 @@
-$navbar-height: 4.25rem;
+$navbar-height: 6.25rem;
 $navbar-height-sm: 2rem;
 .navbar {
     --navbar-height: #{$navbar-height};
     background: transparent;
     border: none;
     padding: .25rem 0;
-    min-height: 4.25rem;
+    min-height: 6.25rem;
     @include media-breakpoint-down(md) {
         --navbar-height: #{$navbar-height-sm};
     }
     .navbar-brand-img {
-        width: 8.85rem;
+        width: 10.85rem;
         @include media-breakpoint-down(md) {
             width: 6.85rem;
         }
