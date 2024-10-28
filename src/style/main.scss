@@ -164,60 +164,6 @@
     }
 }
 
-.banner {
-    position: relative;
-    height: 102vw;
-    @media (min-width: 576px) {
-        height: 98vw;
-    }
-    @media (min-width: 768px) {
-        height: 740px;
-    }
-    @media (min-width: 992px) {
-        height: 480px;
-    }
-    @media (min-width: 1200px) {
-        height: 580px;
-    }
-    .banner-bg {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: -1px;
-        object-fit: cover;
-        @media (min-width: 576px) {
-            object-fit: contain;
-        }
-    }
-    .banner-shadow {
-        background: linear-gradient(359.98deg, #0F1217 14.72%, rgba(15,18,23, 0.57) 55.54%, rgba(15, 18, 23, 0) 92.63%);
-        width: 100%;
-        height: 93px;
-        position: absolute;
-        bottom: 0;
-        padding: 0 1.5rem;
-        .banner-logo {
-            height: .875rem;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            @media (min-width: 576px) {
-                height: 1.5rem;
-            }
-        }
-        @media (min-width: 576px) {
-            height: 200px;
-        }
-    }
-    .banner-title {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-}
-
 .check-circle {
     width: 5.125rem;
     height: 5.125rem;
@@ -244,86 +190,68 @@
     }
 }
 
-.wifi {
-    .banner {
-        position: relative;
-        height: 86vw;
+.banner {
+    position: relative;
+    height: 102vw;
+    @media (min-width: 576px) {
+        height: 98vw;
+    }
+    @media (min-width: 768px) {
+        height: 740px;
+    }
+    @media (min-width: 992px) {
+        height: 480px;
+    }
+    @media (min-width: 1200px) {
+        height: 580px;
+    }
+    .banner-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -1px;
+        object-fit: cover;
         @media (min-width: 576px) {
-            height: 98vw;
+            object-fit: contain;
         }
-        @media (min-width: 768px) {
-            height: 740px;
-        }
-        @media (min-width: 992px) {
-            height: 480px;
-        }
-        @media (min-width: 1200px) {
-            height: 580px;
-        }
+    }
+    &.banner-height {
+        height: 86vw;
     }
     .banner-shadow {
-        height: 65px;
-    }
-}
-
-.wifi-error {
-    .banner {
-        position: relative;
-        height: 86vw;
-        @media (min-width: 576px) {
-            height: 98vw;
-        }
-        @media (min-width: 768px) {
-            height: 740px;
-        }
-        @media (min-width: 992px) {
-            height: 480px;
-        }
-        @media (min-width: 1200px) {
-            height: 580px;
-        }
-    }
-    .banner-shadow {
-        height: 100px;
-    }
-}
-
-.wifi-operator {
-    .banner {
-        position: relative;
-        height: 85vw;
-        @media (min-width: 576px) {
-            height: 98vw;
-        }
-        @media (min-width: 768px) {
-            height: 740px;
-        }
-        @media (min-width: 992px) {
-            height: 480px;
-        }
-        @media (min-width: 1200px) {
-            height: 580px;
-        }
-        .banner-shadow {
-            background: linear-gradient(359.98deg, #0F1217 14.72%, rgba(15,18,23, 0.57) 55.54%, rgba(15, 18, 23, 0) 92.63%);
-            width: 100%;
-            height: 142px;
+        background: linear-gradient(359.98deg, #0F1217 14.72%, rgba(15,18,23, 0.57) 55.54%, rgba(15, 18, 23, 0) 92.63%);
+        width: 100%;
+        height: 93px;
+        position: absolute;
+        bottom: 0;
+        padding: 0 1.5rem;
+        .banner-logo {
+            height: .875rem;
             position: absolute;
             bottom: 0;
-            padding: 0 1.5rem;
-            .banner-logo {
-                height: .875rem;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                @media (min-width: 576px) {
-                    height: 1.5rem;
-                }
-            }
+            left: 50%;
+            transform: translate(-50%, -50%);
             @media (min-width: 576px) {
-                height: 200px;
+                height: 1.5rem;
             }
         }
+        @media (min-width: 576px) {
+            height: 200px;
+        }
+        &.height-sm {
+            height: 65px;
+        }
+        &.height-md {
+            height: 100px;
+        }
+        &.height-lg {
+            height: 142px;
+        }
+    }
+    .banner-title {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 }
