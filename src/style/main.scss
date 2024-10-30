@@ -76,9 +76,9 @@
     .img-sm {
         width: 100%;
         max-height: 11.625rem;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: .625rem;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             max-height: 6.625rem;
         }
     }
