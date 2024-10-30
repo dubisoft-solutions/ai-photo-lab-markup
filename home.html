@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Photo Lab</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="position-relative" data-bs-theme="dark">
+    <main>
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-xxl top-navbar navbar-dark fixed-top scrolled">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../img/logo-user.svg" class="navbar-brand-img" alt="AI Photo Lab">
+                    </a>
+        
+                    <div class="d-flex align-items-center">
+                        <div class="bg-dark text-white fs-3 rounded-4 d-flex d-xl-none align-items-center px-3 py-1 me-3">
+                            <span class="d-grid me-1"><img src="img/circle.svg" alt="Circle"></span>
+                            150
+                        </div>
+            
+                        <a class="nav-link navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#top-navbar-content" aria-controls="top-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                            <icon class="icon icon-menu-close fs-4 text-white dropdown-icon-open"></icon>
+                            <icon class="icon icon-menu-open fs-4 text-white dropdown-icon-close"></icon>
+                        </a>
+            
+                        <div class="collapse navbar-collapse justify-content-end" data-bs-delay='{"show":0,"hide":0}' id="top-navbar-content">
+                            <ul class="navbar-nav dropdown-menu pe-lg-0">
+                                <li class="nav-item dropdown dropdown-inside">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="me-3"><img src="img/step-1.svg" alt="Step 1"></span>Creative Mode
+                                    </a>
+                                    <ul class="dropdown-menu mb-3 px-xl-4 px-5">
+                                      <li><a class="dropdown-item px-0" href="future-baby.html">Future Baby</a></li>
+                                      <li><a class="dropdown-item px-0" href="style-picture.html">Style Picture</a></li>
+                                      <li><a class="dropdown-item px-0" href="bode-enhancer.html">Body Enhancer</a></li>
+                                      <li><a class="dropdown-item px-0" href="face-enhancer.html">Face Enhancer</a></li>
+                                      <li><a class="dropdown-item px-0" href="photo-face-swap.html">Photo Face Swap </a></li>
+                                    </ul>
+                                  </li>
+                                <li class="nav-item dropdown dropdown-inside">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="me-3"><img src="img/step-2.svg" alt="Step 2"></span>Video Mode
+                                    </a>
+                                    <ul class="dropdown-menu mb-3 px-xl-4 px-5">
+                                      <li><a class="dropdown-item px-0" href="face-swap.html">Video Face Swap</a></li>
+                                      <li><a class="dropdown-item px-0" href="live-portrait.html">Live Portrait</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="#"><span class="me-3"><img src="img/step-3.svg" alt="Step 3"></span>Editor Mode </a></li>
+                                
+                                <li class="nav-item"><a class="dropdown-item d-flex align-items-center" href="#"><icon class="icon icon-clock fs-2 text-white d-grid me-3"></icon>History</a></li>
+        
+                                <li class="nav-item d-none d-xl-flex bg-dark text-white fs-3 rounded-4 align-items-center px-3 py-1">
+                                        <span class="d-grid me-1"><img src="img/circle.svg" alt="Circle"></span>
+                                        150
+                                </li>
+                                
+                                <li class="nav-item"><a class="dropdown-item d-flex align-items-center" href="account.html"><icon class="icon icon-user fs-2 text-white d-grid me-3"></icon>Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main">
+            <!-- Main section -->
+            <section class="mt-6 mb-4 pb-2">
+                <div class="container-fluid container-lg px-lg-3 px-0 mb-lg-5 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <center>
+                            <video
+                                id="video-player"
+                                controls
+                                muted
+                                class="cld-video-player cld-video-player-skin-dark cld-fluid">
+                            </video>
+                        </center>
+                    </div>
+                </div>
+                <!-- <img src="img/wifi-bg.png" alt="Banner image" class="banner-bg"> -->
+                <div class="container px-4">
+                    <div class="banner-shadow text-center">
+                        <span class="badge text-bg-warning mb-3">Ai technology</span>
+                        <h1 class="text-capitalize">Unleash the Power of <span class="d-lg-block d-inline"><span class="text-gradient-primary">AI</span> for <span class="text-gradient-primary">Stunning Visuals</span></span></h1>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="creative-mode mb-6">
+                <div class="container-fluid-right">
+                    <div class="row mb-4">
+                        <div class="col-lg-6 offset-lg-1">
+                            <h2 class="mb-3 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-1.svg" alt="Step 1"></span>Creative Mode</h2>
+                            <p>Dive into endless creative possibilities:predict your baby’s appearance, transform into a movie character, enhance your body or face, and more!</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center ps-xl-0 ps-3 pb-lg-4 pb-2">
+                        <div class="col-12 col-xl-8 text-center px-0">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active">
+                                    <div class="col position-relative">
+                                        <a href="detail-item.html">
+                                            <span class="item-preview">
+                                                <img src="img/creative-mode/baby.png" alt="Baby" class="img-sm">
+                                            </span>
+
+                                            <span class="info">
+                                                <p class="text-white fs-4 two-lines-ellipsis">Future Baby</p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col position-relative">
+                                        <a href="detail-item.html">
+                                            <span class="item-preview">
+                                                <img src="img/creative-mode/restyle.png" alt="Style picture" class="img-sm">
+                                            </span>
+
+                                            <span class="info">
+                                                <p class="text-white fs-4 two-lines-ellipsis">Style picture</p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col position-relative">
+                                        <a href="detail-item.html">
+                                            <span class="item-preview">
+                                                <img src="img/creative-mode/body-enhancer.png" alt="Body Enhancer" class="img-sm">
+                                            </span>
+
+                                            <span class="info">
+                                                <p class="text-white fs-4 two-lines-ellipsis">Body Enhancer</p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col position-relative">
+                                        <a href="detail-item.html">
+                                            <span class="item-preview">
+                                                <img src="img/creative-mode/face-enhancer.png" alt="Face Enhancer" class="img-sm">
+                                            </span>
+
+                                            <span class="info">
+                                                <p class="text-white fs-4 two-lines-ellipsis">Face Enhancer</p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col position-relative">
+                                        <a href="detail-item.html">
+                                            <span class="item-preview">
+                                                <img src="img/creative-mode/face-swap.png" alt="Face Swap" class="img-sm">
+                                            </span>
+
+                                            <span class="info">
+                                                <p class="text-white fs-4 two-lines-ellipsis">Face Swap</p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-mode mb-6">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-lg-6 offset-lg-1">
+                            <h2 class="mb-3 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-2.svg" alt="Step 2"></span>Video Mode</h2>
+                            <p>AI Video is here! Swap your face in popular videos and change your expressions with live portrait</p>
+                        </div>
+                    </div>
+
+                    <div class="row pb-lg-4 pb-2">
+                        <div class="col-12 col-lg-4 offset-lg-2 offset-0 position-relative mb-3">
+                            <a href="detail-item.html">
+                                <span class="item-preview">
+                                    <img src="img/video-mode/face-swap.png" alt="Face Swap" class="img-sm">
+                                </span>
+
+                                <span class="info">
+                                    <p class="text-white fs-4 two-lines-ellipsis">Face Swap</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 position-relative">
+                            <a href="detail-item.html">
+                                <span class="item-preview">
+                                    <img src="img/video-mode/live-portrait.png" alt="Live Portrait" class="img-sm">
+                                </span>
+
+                                <span class="info">
+                                    <p class="text-white fs-4 two-lines-ellipsis">Live Portrait</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="editor-mode mb-6">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-lg-6 offset-lg-1">
+                            <h2 class="mb-3 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-3.svg" alt="Step 3"></span>Editor Mode</h2>
+                            <p class="mb-4">Unlock advanced tools to elevate your visual content: remove backgrounds, erase objects, upscale images, and more.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 text-lg-center">
+                            <a href="editor-mode.html" class="btn btn-outline-primary btn-lg d-flex justify-content-center align-items-center mb-2"><span class="pe-2"><img src="img/magic-pen.svg" alt="Editor"></span>Go to Editor Mode</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer mt-auto pt-lg-5 pt-0">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-9 col-md-5 col-xl-3 text-center d-lg-inline d-grid align-items-center">
+                            <ul class="list-inline d-flex justify-content-around mb-3 pb-1 ps-0">
+                                <li class="list-inline-item d-inline px-1 px-md-3 me-0">
+                                    <a href="faq.html" class="btn-link text-uppercase text-decoration-none">FAQ</a>
+                                </li>
+                                <li class="list-inline-item d-inline px-1 px-md-3 me-0">
+                                    <a href="contact-us.html" class="btn-link text-uppercase text-decoration-none">Contact us</a>
+                                </li>
+                                <li class="list-inline-item d-inline px-1 px-md-3 me-0">
+                                    <a href="terms.html" class="btn-link text-uppercase text-decoration-none">T&C</a>
+                                </li>
+                            </ul>
+            
+                            <p class="text-copyright mb-2">@NEXTMOVE DIGITAL 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+
+<script src="js/main.js"></script>
+
+
+<!-- do not use this file in prod. See the comments inside the file -->
+<script src="js/markup-controller.js"></script>
+
+</html>
