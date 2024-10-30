@@ -1,5 +1,5 @@
 $navbar-height: 6.25rem;
-$navbar-height-sm: 2rem;
+$navbar-height-sm: 3.125rem;
 .navbar {
     --navbar-height: #{$navbar-height};
     background: transparent;
@@ -60,6 +60,26 @@ $navbar-height-sm: 2rem;
     .navbar-nav {
         &.dropdown-menu {
             background-color: transparent;
+            .nav-item {
+                color: $light-gray;
+                .dropdown-item {
+                    font-size: 1.125rem;
+                    color: $light-gray;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 0 ;
+                    &:focus,
+                    &:hover,
+                    &:active {
+                        background: none;
+                        color: $dark-gray;
+                    }
+                    @include media-breakpoint-down(lg) {
+                        padding: .75rem 1rem;
+                    }
+                }
+            }
         }
         @include media-breakpoint-down(lg) {
             &.dropdown-menu {
@@ -76,18 +96,22 @@ $navbar-height-sm: 2rem;
                 backdrop-filter: blur(25px);
                 &.show {
                     background: $black;
+                    color: $dark-gray;
                 }
                 .dropdown-item {
-                    font-size: 1.25rem;
+                    font-size: 1.125rem;
                     color: $light-gray;
                     display: flex;
                     justify-content: start;
                     align-items: center;
+                    padding: 0;
                     &:focus,
                     &:hover,
                     &:active {
                         background: none;
+                        color: $dark-gray;
                     }
+                    
                 }
                 position: absolute;
                 top: var(--navbar-height);
@@ -107,4 +131,38 @@ $navbar-height-sm: 2rem;
 .dropdown-menu[data-bs-popper] {
     left: auto;
     right: 0;
+}
+
+.dropdown {
+    &.dropdown-inside {
+        .dropdown-toggle {
+            font-size: 1.125rem;
+            padding: 0 1rem;
+            color: $light-gray;
+            font-family: $font-family-sans-serif;
+            @include media-breakpoint-down(lg) {
+                padding: .75rem 1rem;
+            }
+        }
+        .dropdown-menu {
+            background-color: $black;
+            padding-top: 1rem;
+            &.show {
+                background-color: $black;
+                color: $dark-gray!important;
+            }
+            .dropdown-item {
+                font-size: 1rem;
+                color: $dark-gray!important;
+                padding: 0 1rem;
+                &.active,
+                &:hover,
+                &:focus {
+                    color: $white;
+                    background-color: $black;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
 }

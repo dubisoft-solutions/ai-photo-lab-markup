@@ -30,18 +30,19 @@ $icon-name-arrow-right: "\E002";
 $icon-name-arrow-top: "\E003"; 
 $icon-name-basketball: "\E004"; 
 $icon-name-check: "\E005"; 
-$icon-name-clock: "\E006"; 
-$icon-name-close: "\E007"; 
-$icon-name-football: "\E008"; 
-$icon-name-menu-close: "\E009"; 
-$icon-name-menu-open: "\E00A"; 
-$icon-name-menu: "\E00B"; 
-$icon-name-minus: "\E00C"; 
-$icon-name-plus-circle: "\E00D"; 
-$icon-name-plus: "\E00E"; 
-$icon-name-prev: "\E00F"; 
-$icon-name-racquet: "\E010"; 
-$icon-name-user: "\E011"; 
+$icon-name-circle: "\E006"; 
+$icon-name-clock: "\E007"; 
+$icon-name-close: "\E008"; 
+$icon-name-football: "\E009"; 
+$icon-name-menu-close: "\E00A"; 
+$icon-name-menu-open: "\E00B"; 
+$icon-name-menu: "\E00C"; 
+$icon-name-minus: "\E00D"; 
+$icon-name-plus-circle: "\E00E"; 
+$icon-name-plus: "\E00F"; 
+$icon-name-prev: "\E010"; 
+$icon-name-racquet: "\E011"; 
+$icon-name-user: "\E012"; 
 
 
 @function icon-char($filename) {
@@ -62,41 +63,44 @@ $icon-name-user: "\E011";
 	@if $filename == check {
 		$char: "\E005";
 	}
-	@if $filename == clock {
+	@if $filename == circle {
 		$char: "\E006";
 	}
-	@if $filename == close {
+	@if $filename == clock {
 		$char: "\E007";
 	}
-	@if $filename == football {
+	@if $filename == close {
 		$char: "\E008";
 	}
-	@if $filename == menu-close {
+	@if $filename == football {
 		$char: "\E009";
 	}
-	@if $filename == menu-open {
+	@if $filename == menu-close {
 		$char: "\E00A";
 	}
-	@if $filename == menu {
+	@if $filename == menu-open {
 		$char: "\E00B";
 	}
-	@if $filename == minus {
+	@if $filename == menu {
 		$char: "\E00C";
 	}
-	@if $filename == plus-circle {
+	@if $filename == minus {
 		$char: "\E00D";
 	}
-	@if $filename == plus {
+	@if $filename == plus-circle {
 		$char: "\E00E";
 	}
-	@if $filename == prev {
+	@if $filename == plus {
 		$char: "\E00F";
 	}
-	@if $filename == racquet {
+	@if $filename == prev {
 		$char: "\E010";
 	}
-	@if $filename == user {
+	@if $filename == racquet {
 		$char: "\E011";
+	}
+	@if $filename == user {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -127,6 +131,9 @@ $icon-name-user: "\E011";
 }
 .icon-check {
 	@include icon(check);
+}
+.icon-circle {
+	@include icon(circle);
 }
 .icon-clock {
 	@include icon(clock);

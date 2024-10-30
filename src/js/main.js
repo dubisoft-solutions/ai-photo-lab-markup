@@ -106,8 +106,7 @@ function carouselsSetup(userRtl) {
                         stagePadding: 46
                     },
                     1400: {
-                        items: 6,
-                        stagePadding: 10
+                        items: 5
                     }
                 }
             })

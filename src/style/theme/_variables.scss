@@ -30,7 +30,7 @@ $btn-link-hover-color: $blue;
 $font-size-base: 1rem;
 $line-height-base: 1.5;
 $h1-font-size: 3.313rem;
-$h2-font-size: 2.5rem;
+$h2-font-size: 1.5rem;
 $h3-font-size: 1.125rem;
 $h4-font-size: 1rem;
 $headings-line-height: 1;
@@ -38,7 +38,7 @@ $headings-font-weight: bold;
 $headings-color: $light-gray;
 $font-sizes: ( 1: 1.5rem, 2: 1rem, 3: .875rem, 4: .75rem)!default;
 $spacer: 1rem;
-$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 7.188);
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 6.25, 7: $spacer * 7.188);
 // break points
 $grid-breakpoints: (xxc:0, xs: 390px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px, xxxl: 1548px, xxxxl: 1920px, xxxxxl: 2560px);
 // containers
@@ -46,11 +46,11 @@ $container-max-widths: (xc: 100%, sm: 540px, md: 720px, lg: 960px, xl: 1160px, x
 // dropdown
 $gradient-blue: linear-gradient(116.97deg, #1254FF -16.64%, #2EF2FF 154.41%);
 $dropdown-padding-x: 1rem;
-$dropdown-padding-y: 3.35rem;
+$dropdown-padding-y: 1rem;
 $dropdown-item-padding-y: 1rem;
 $dropdown-item-padding-x: 1rem;
 $dropdown-border-radius: .563rem;
-$dropdown-font-size: .875rem;
+$dropdown-font-size: 1.125rem;
 $dropdown-bg: $dark-blue!default;
 $dropdown-color: $gray-202!default;
 $dropdown-link-color: $white;
