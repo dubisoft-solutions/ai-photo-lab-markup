@@ -69,29 +69,33 @@
         </header>
 
         <div class="main">
-            <section class="category mt-lg-5 pt-lg-5 mt-5 pt-4 pb-5 mb-5">
+            <section class="contact mt-lg-5 pt-lg-5 mt-5 pt-4 pb-5 mb-5">
                 <div class="container px-4">
-                    <div class="d-flex align-items-center pt-lg-4 pb-lg-5 mb-lg-4 pb-5">
-                        <a href="account.html" class="pe-3">
-                            <div class="icon-style rounded-circle d-flex justify-content-center align-items-center">
-                                <icon class="icon icon-prev text-dark fs-4 d-grid"></icon>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-1">
+                            <div class="d-flex align-items-center pt-lg-4 pb-lg-5 pb-5">
+                                <a href="account.html" class="pe-3">
+                                    <div class="icon-style rounded-circle d-flex justify-content-center align-items-center">
+                                        <icon class="icon icon-arrow-left text-dark fs-3 d-grid"></icon>
+                                    </div>
+                                </a>
+                                <h3 class="mb-0">Contact Us</h3>
                             </div>
-                        </a>
-                        <h3 class="mb-0">Contact Us</h3>
+                        </div>
                     </div>
 
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-10 col-12">
-                            <p class="text-body fw-bold fs-3 mb-3">We are here for you! How can we help?</p>
-                            <form id="contactUsForm" class="contact row needs-validation" novalidate>
-                                <div class="col-lg-6 col-12 mb-3 text-start position-relative">
-                                    <input type="email" class="form-control contact" id="inputEmail" aria-describedby="validationTooltipEmail" placeholder="Enter email: Example@gmail.com" required>
+                            <p class="text-body fs-3 mb-3">We are here for you! How can we help?</p>
+                            <form id="contactUsForm" class="row needs-validation" novalidate>
+                                <div class="col-lg-12 mb-3 text-start position-relative">
+                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="validationTooltipEmail" placeholder="Enter email: Example@gmail.com" required>
                                     <div class="invalid-tooltip">
                                         Please enter a valid email *
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-12 col-lg-6 mb-4 text-start position-relative">
+                                <div class="col-lg-12 mb-3 text-start position-relative">
                                     <select class="selectpicker w-100" title="Select Issue" id="selectIssues" aria-describedby="validationTooltipIssue">
                                         <option>Freeze / Crash / Loading Issues</option>
                                         <option>Questions / Feedback </option>
@@ -102,23 +106,23 @@
                                 </div>
 
                                 <div class="col-lg-12 mb-4 text-start">
-                                    <textarea class="form-control contact" id="textareaMessage" rows="12" placeholder="Describe your issue here"></textarea>
+                                    <textarea class="form-control" id="textareaMessage" rows="12" placeholder="Describe your issue here"></textarea>
                                 </div>
 
-                                <div class="col-lg-5 offset-lg-1 col-12 py-4">
-                                    <label for="textAttachment" class="form-label fw-medium fs-10 text-body mb-lg-4 mb-3">Attachment</label>
+                                <div class="col-lg-12 py-4">
+                                    <label for="textAttachment" class="mb-lg-3">Attachment</label>
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <button class="btn btn-dark border-1 border-success chose-attachment-file-btn">Choose files</button>
+                                            <button class="btn btn-outline-primary rounded-2 px-5 chose-attachment-file-btn text-capitalize">Choose files</button>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <p class="text-muted ps-4 attachment-file-name fst-italic fs-3 text-truncate">No file chosen</p>
+                                            <p class="text-muted ps-4 attachment-file-name fs-3 text-truncate">No file chosen</p>
                                             <input type="file" class="d-none" name="attachment-file" id="attachment-file-input">
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-5 offset-lg-1 col-12 pt-lg-5 pt-0 mt-lg-4 mt-0">
+                                <div class="col-lg-12 text-center pt-lg-5 pt-0 mt-lg-4 mt-0">
                                     <div class="grecaptcha recaptcha-style"></div>
                                 </div>
 
@@ -128,7 +132,7 @@
                             </form>
                             <div class="row justify-content-lg-center justify-content-start mb-lg-0 mb-4">
                                 <div class="col-lg-6 col-12 pb-lg-0 pb-5 text-start">
-                                    <div class="card text-center">
+                                    <div class="bg-dark p-4 rounded-2 text-center">
                                         <a href="#" class="text-body fs-3">Wi-fi User not detected</a>
                                     </div>
                                 </div>

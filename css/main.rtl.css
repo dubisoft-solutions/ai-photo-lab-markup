@@ -225,7 +225,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1;
   color: var(--bs-heading-color);
 }
@@ -5887,7 +5887,7 @@ textarea.form-control-lg {
   --bs-badge-padding-x: 0.5rem;
   --bs-badge-padding-y: 0.313rem;
   --bs-badge-font-size: 0.813rem;
-  --bs-badge-font-weight: 700;
+  --bs-badge-font-weight: 400;
   --bs-badge-color: #FFFFFF;
   --bs-badge-border-radius: 0.25rem;
   display: inline-block;
@@ -16823,7 +16823,7 @@ textarea.form-control-lg {
   src: url("../fonts/IconsFont.eot");
   src: url("../fonts/IconsFont.eot?#iefix") format("eot"), url("../fonts/IconsFont.woff2") format("woff2"), url("../fonts/IconsFont.woff") format("woff"), url("../fonts/IconsFont.ttf") format("truetype"), url("../fonts/IconsFont.svg#IconsFont") format("svg");
 }
-.icon-user:before, .icon-racquet:before, .icon-next:before, .icon-plus:before, .icon-plus-circle:before, .icon-minus:before, .icon-menu:before, .icon-menu-open:before, .icon-menu-close:before, .icon-football:before, .icon-close:before, .icon-clock:before, .icon-circle:before, .icon-check:before, .icon-basketball:before, .icon-arrow-top:before, .icon-arrow-left:before, .icon-arrow-down:before {
+.icon-user:before, .icon-racquet:before, .icon-next:before, .icon-plus:before, .icon-plus-circle:before, .icon-minus:before, .icon-menu:before, .icon-menu-open:before, .icon-menu-close:before, .icon-football:before, .icon-close:before, .icon-clock:before, .icon-circle:before, .icon-check:before, .icon-basketball:before, .icon-arrow-top:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-arrow-down:before {
   font-family: "IconsFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16838,72 +16838,76 @@ textarea.form-control-lg {
   content: "\e001";
 }
 
-.icon-arrow-left:before {
+.icon-arrow-right:before {
   content: "\e002";
 }
 
-.icon-arrow-top:before {
+.icon-arrow-left:before {
   content: "\e003";
 }
 
-.icon-basketball:before {
+.icon-arrow-top:before {
   content: "\e004";
 }
 
-.icon-check:before {
+.icon-basketball:before {
   content: "\e005";
 }
 
-.icon-circle:before {
+.icon-check:before {
   content: "\e006";
 }
 
-.icon-clock:before {
+.icon-circle:before {
   content: "\e007";
 }
 
-.icon-close:before {
+.icon-clock:before {
   content: "\e008";
 }
 
-.icon-football:before {
+.icon-close:before {
   content: "\e009";
 }
 
-.icon-menu-close:before {
+.icon-football:before {
   content: "\e00a";
 }
 
-.icon-menu-open:before {
+.icon-menu-close:before {
   content: "\e00b";
 }
 
-.icon-menu:before {
+.icon-menu-open:before {
   content: "\e00c";
 }
 
-.icon-minus:before {
+.icon-menu:before {
   content: "\e00d";
 }
 
-.icon-plus-circle:before {
+.icon-minus:before {
   content: "\e00e";
 }
 
-.icon-plus:before {
+.icon-plus-circle:before {
   content: "\e00f";
 }
 
-.icon-next:before {
+.icon-plus:before {
   content: "\e010";
 }
 
-.icon-racquet:before {
+.icon-next:before {
   content: "\e011";
 }
 
-.icon-user:before {
+.icon-racquet:before {
   content: "\e012";
+}
+
+.icon-user:before {
+  content: "\e013";
 }
 
 .btn {
@@ -16950,7 +16954,7 @@ textarea.form-control-lg {
 }
 
 .footer .btn-link {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #F0F0F0;
   padding: 0;
 }
@@ -16962,7 +16966,7 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 .form-control:focus {
-  background-color: #F0F0F0 !important;
+  background-color: #F0F0F0;
   box-shadow: none;
 }
 .form-control.contact {
@@ -17051,6 +17055,16 @@ textarea.form-control-lg {
 .was-validated .form-control.contact:invalid {
   border: 2px solid #fd5732;
   padding: 1.063rem 1rem;
+}
+
+.contact .form-control {
+  color: #9E9E9E;
+  background-color: #1B2129;
+  border-color: #1B2129;
+  border-radius: 0.563rem;
+}
+.contact .form-control:focus {
+  background-color: #1B2129;
 }
 
 .navbar {
@@ -17372,7 +17386,7 @@ textarea.form-control-lg {
 }
 
 .accordion-button {
-  font-size: 0.875rem;
+  font-size: 1rem;
   border-radius: 1.5rem;
 }
 .accordion-button:focus {
@@ -17388,7 +17402,7 @@ textarea.form-control-lg {
   font-weight: normal;
   text-decoration: none;
   text-transform: none;
-  content: "\e00f";
+  content: "\e010";
   color: #1B2129;
   font-size: 0.688rem;
   background-image: none;
@@ -17405,12 +17419,11 @@ textarea.form-control-lg {
   }
 }
 .accordion-button[aria-expanded=true]::after {
-  content: "\e00d";
+  content: "\e00e";
   color: #1B2129;
 }
 @media (max-width: 767.98px) {
   .accordion-button {
-    font-size: 0.875rem;
     line-height: 1.063rem;
     border-radius: 1.5rem;
     --bs-accordion-btn-padding-x: 1.125rem;
@@ -17862,7 +17875,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select .dropdown-toggle.btn-light::placeholder {
-    font-size: 0.875rem !important;
+    font-size: 0.875rem;
   }
 }
 .bootstrap-select .dropdown-toggle.btn-light::after {
@@ -17874,7 +17887,7 @@ select.selectpicker {
   font-weight: normal;
   text-decoration: none;
   text-transform: none;
-  content: "\e003";
+  content: "\e001";
   display: block;
   color: #141414;
   font-size: 0.5rem;
@@ -17884,24 +17897,15 @@ select.selectpicker {
   border-right: none;
 }
 .bootstrap-select .dropdown-toggle.btn-light:focus {
-  outline: none !important;
-  outline-offset: none !important;
+  outline: none;
+  outline-offset: none;
   box-shadow: none;
 }
 .bootstrap-select .dropdown-toggle.btn-light.show, .bootstrap-select .dropdown-toggle.btn-light:active, .bootstrap-select .dropdown-toggle.btn-light:focus, .bootstrap-select .dropdown-toggle.btn-light:hover {
   color: #727C89 !important;
-  background-color: #FFFFFF !important;
+  background-color: #FFFFFF;
 }
 .bootstrap-select .dropdown-toggle.btn-light.show::after {
-  font-family: "IconsFont";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  text-decoration: none;
-  text-transform: none;
-  content: "\e001";
   transform: rotate(-180deg);
 }
 @media (max-width: 767.98px) {
@@ -17941,60 +17945,19 @@ select.selectpicker {
     font-size: 0.875rem;
   }
 }
-.bootstrap-select.contact .dropdown-toggle {
-  border: none;
-  background-color: #1B2129;
-  color: #727C89;
-  border-radius: 0.563rem;
-}
-.bootstrap-select.contact .dropdown-toggle.show, .bootstrap-select.contact .dropdown-toggle:active, .bootstrap-select.contact .dropdown-toggle:focus, .bootstrap-select.contact .dropdown-toggle:hover {
-  background-color: #1B2129 !important;
-}
-.bootstrap-select.contact > .dropdown-menu {
-  background: linear-gradient(-152.98deg, rgba(255, 255, 255, 0.2) 14.8%, rgba(255, 255, 255, 0.01) 87.76%);
-  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-  border: none;
-  --bs-dropdown-padding-y: .0.625rem;
-  --bs-dropdown-padding-x: -1rem;
-}
-.bootstrap-select.contact > .dropdown-menu ul {
-  background-color: #1B2129;
-}
-.bootstrap-select.contact > .dropdown-menu ul.show {
-  color: #727C89;
-  background-color: #1B2129;
-  border: none;
-  border-radius: 0.563rem;
-}
-.bootstrap-select.contact > .dropdown-menu ul .dropdown-item {
-  font-size: 1rem;
-  color: #727C89;
-  padding: 0.813rem 1rem;
-  background-color: #1B2129;
-}
-.bootstrap-select.contact > .dropdown-menu ul .dropdown-item.active, .bootstrap-select.contact > .dropdown-menu ul .dropdown-item:hover, .bootstrap-select.contact > .dropdown-menu ul .dropdown-item:focus {
-  color: #727C89;
-  background: #1B2129;
-  opacity: 0.8;
-}
-@media (max-width: 767.98px) {
-  .bootstrap-select.contact > .dropdown-menu ul .dropdown-item {
-    font-size: 0.875rem;
-  }
-}
 
 .bootstrap-select .bs-ok-default:after {
   display: none;
 }
 
 .bootstrap-select > .dropdown-toggle.bs-placeholder {
-  font-size: 1rem !important;
+  font-size: 1rem;
   color: #727C89;
 }
 @media (max-width: 767.98px) {
   .bootstrap-select > .dropdown-toggle.bs-placeholder {
-    font-size: 0.875rem !important;
-    color: #727C89 !important;
+    font-size: 0.875rem;
+    color: #727C89;
   }
 }
 
@@ -18002,7 +17965,7 @@ select.selectpicker {
 .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
-  font-size: 1rem !important;
+  font-size: 1rem;
   color: #727C89;
 }
 @media (max-width: 767.98px) {
@@ -18010,8 +17973,74 @@ select.selectpicker {
   .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
   .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
   .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
-    font-size: 0.875rem !important;
+    font-size: 0.875rem;
   }
+}
+
+.bootstrap-select > .dropdown-menu ul.show {
+  background: #1B2129 !important;
+}
+
+.contact .dropdown-toggle.btn-light {
+  border: none;
+  background-color: #1B2129 !important;
+  color: #CACACA;
+  border-radius: 0.563rem;
+}
+.contact .dropdown-toggle.btn-light::placeholder {
+  color: #727C89;
+}
+@media (max-width: 767.98px) {
+  .contact .dropdown-toggle.btn-light::placeholder {
+    font-size: 0.875rem;
+  }
+}
+.contact .dropdown-toggle.btn-light::after {
+  color: #727C89;
+}
+.contact .dropdown-toggle.btn-light:focus {
+  outline: none;
+  outline-offset: none;
+  box-shadow: none;
+}
+.contact .dropdown-toggle.btn-light.show, .contact .dropdown-toggle.btn-light:active, .contact .dropdown-toggle.btn-light:focus, .contact .dropdown-toggle.btn-light:hover {
+  color: #CACACA;
+  background-color: #1B2129 !important;
+}
+.contact > .dropdown-menu {
+  background: #1B2129 !important;
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  border: none;
+  --bs-dropdown-padding-y: .0.625rem;
+  --bs-dropdown-padding-x: -1rem;
+}
+.contact > .dropdown-menuul {
+  background-color: #1B2129 !important;
+}
+.contact > .dropdown-menuul.show {
+  color: #CACACA;
+  background-color: #1B2129 !important;
+  border: none;
+  border-radius: 0.563rem;
+}
+.contact > .dropdown-menuul.show .dropdown-item {
+  font-size: 1rem;
+  color: #CACACA;
+  padding: 0.813rem 1rem;
+  background-color: #1B2129 !important;
+}
+.contact > .dropdown-menuul.show .dropdown-item.active, .contact > .dropdown-menuul.show .dropdown-item:hover, .contact > .dropdown-menuul.show .dropdown-item:focus {
+  color: #CACACA;
+  background: #1B2129 !important;
+  opacity: 0.8;
+}
+@media (max-width: 767.98px) {
+  .contact > .dropdown-menuul.show .dropdown-item {
+    font-size: 0.875rem;
+  }
+}
+.contact .bootstrap-select > .dropdown-menu ul .dropdown-item {
+  background: #1B2129 !important;
 }
 
 a {
@@ -18045,6 +18074,12 @@ textarea {
 
 .fs-1 {
   font-size: 1.5rem !important;
+}
+
+@media (max-width: 575.98px) {
+  .fs-2 {
+    font-size: 0.75rem !important;
+  }
 }
 
 p {
@@ -18117,6 +18152,9 @@ p {
   }
   h2, .h2 {
     font-size: 1.25rem !important;
+  }
+  h3, .h3 {
+    font-size: 1rem !important;
   }
   h4, .h4 {
     font-size: 0.875rem !important;
@@ -18419,9 +18457,9 @@ p {
 }
 
 .icon-style {
-  background-color: #FFFFFF;
-  width: 1.5rem;
-  height: 1.5rem;
+  background-color: #F0F0F0;
+  width: 1.625rem;
+  height: 1.625rem;
 }
 
 .text-copyright {
