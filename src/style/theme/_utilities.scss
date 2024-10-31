@@ -28,3 +28,9 @@ textarea {
 .fs-1 {
     font-size: 1.5rem!important;
 }
+
+.fs-2 {
+    @include media-breakpoint-down(sm) {
+        font-size: .75rem!important;
+    }
+}

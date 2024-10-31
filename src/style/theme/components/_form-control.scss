@@ -4,7 +4,7 @@
         font-size: 1rem;
     }
     &:focus {
-        background-color: $light-gray!important;
+        background-color: $light-gray;
         box-shadow: none;
     }
     &.contact {
@@ -88,4 +88,16 @@
 .was-validated .form-control.contact:invalid {
     border: 2px solid #fd5732;
     padding: 1.063rem 1rem;
+}
+
+.contact {
+    .form-control {
+        color: $gray-158;
+        background-color: $dark-blue;
+        border-color: $dark-blue;
+        border-radius: .563rem;
+        &:focus {
+            background-color: $dark-blue;
+        }
+    }
 }

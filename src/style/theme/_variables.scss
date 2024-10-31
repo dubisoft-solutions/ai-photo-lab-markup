@@ -1,7 +1,8 @@
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: "Violet Sans" !default;
-$font-weight-medium: 500;
+$font-weight-normal: 400;
+$font-weight-base: $font-weight-normal;
 $container-padding-x: 2rem;
 $white: #FFFFFF;
 $light-gray: #F0F0F0;
@@ -34,7 +35,7 @@ $h2-font-size: 1.5rem;
 $h3-font-size: 1.125rem;
 $h4-font-size: 1rem;
 $headings-line-height: 1;
-$headings-font-weight: bold;
+$headings-font-weight: 400;
 $headings-color: $light-gray;
 $font-sizes: ( 1: 1.5rem, 2: 1rem, 3: .875rem, 4: .75rem)!default;
 $spacer: 1rem;
@@ -102,6 +103,7 @@ $modal-content-border-radius: 0;
 $modal-dialog-margin: 1rem;
 // badge
 $badge-font-size: .813rem;
+$badge-font-weight: $font-weight-normal;
 $badge-padding-y: .313rem;
 $badge-padding-x: .5rem;
 $badge-border-radius: .25rem;

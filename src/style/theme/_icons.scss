@@ -26,23 +26,24 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
-$icon-name-arrow-right: "\E002"; 
-$icon-name-arrow-top: "\E003"; 
-$icon-name-basketball: "\E004"; 
-$icon-name-check: "\E005"; 
-$icon-name-circle: "\E006"; 
-$icon-name-clock: "\E007"; 
-$icon-name-close: "\E008"; 
-$icon-name-football: "\E009"; 
-$icon-name-menu-close: "\E00A"; 
-$icon-name-menu-open: "\E00B"; 
-$icon-name-menu: "\E00C"; 
-$icon-name-minus: "\E00D"; 
-$icon-name-plus-circle: "\E00E"; 
-$icon-name-plus: "\E00F"; 
-$icon-name-prev: "\E010"; 
-$icon-name-racquet: "\E011"; 
-$icon-name-user: "\E012"; 
+$icon-name-arrow-left: "\E002"; 
+$icon-name-arrow-right: "\E003"; 
+$icon-name-arrow-top: "\E004"; 
+$icon-name-basketball: "\E005"; 
+$icon-name-check: "\E006"; 
+$icon-name-circle: "\E007"; 
+$icon-name-clock: "\E008"; 
+$icon-name-close: "\E009"; 
+$icon-name-football: "\E00A"; 
+$icon-name-menu-close: "\E00B"; 
+$icon-name-menu-open: "\E00C"; 
+$icon-name-menu: "\E00D"; 
+$icon-name-minus: "\E00E"; 
+$icon-name-plus-circle: "\E00F"; 
+$icon-name-plus: "\E010"; 
+$icon-name-prev: "\E011"; 
+$icon-name-racquet: "\E012"; 
+$icon-name-user: "\E013"; 
 
 
 @function icon-char($filename) {
@@ -51,56 +52,59 @@ $icon-name-user: "\E012";
 	@if $filename == arrow-down {
 		$char: "\E001";
 	}
-	@if $filename == arrow-right {
+	@if $filename == arrow-left {
 		$char: "\E002";
 	}
-	@if $filename == arrow-top {
+	@if $filename == arrow-right {
 		$char: "\E003";
 	}
-	@if $filename == basketball {
+	@if $filename == arrow-top {
 		$char: "\E004";
 	}
-	@if $filename == check {
+	@if $filename == basketball {
 		$char: "\E005";
 	}
-	@if $filename == circle {
+	@if $filename == check {
 		$char: "\E006";
 	}
-	@if $filename == clock {
+	@if $filename == circle {
 		$char: "\E007";
 	}
-	@if $filename == close {
+	@if $filename == clock {
 		$char: "\E008";
 	}
-	@if $filename == football {
+	@if $filename == close {
 		$char: "\E009";
 	}
-	@if $filename == menu-close {
+	@if $filename == football {
 		$char: "\E00A";
 	}
-	@if $filename == menu-open {
+	@if $filename == menu-close {
 		$char: "\E00B";
 	}
-	@if $filename == menu {
+	@if $filename == menu-open {
 		$char: "\E00C";
 	}
-	@if $filename == minus {
+	@if $filename == menu {
 		$char: "\E00D";
 	}
-	@if $filename == plus-circle {
+	@if $filename == minus {
 		$char: "\E00E";
 	}
-	@if $filename == plus {
+	@if $filename == plus-circle {
 		$char: "\E00F";
 	}
-	@if $filename == prev {
+	@if $filename == plus {
 		$char: "\E010";
 	}
-	@if $filename == racquet {
+	@if $filename == prev {
 		$char: "\E011";
 	}
-	@if $filename == user {
+	@if $filename == racquet {
 		$char: "\E012";
+	}
+	@if $filename == user {
+		$char: "\E013";
 	}
 
 	@return $char;
@@ -119,6 +123,9 @@ $icon-name-user: "\E012";
 
 .icon-arrow-down {
 	@include icon(arrow-down);
+}
+.icon-arrow-left {
+	@include icon(arrow-left);
 }
 .icon-arrow-right {
 	@include icon(arrow-right);
