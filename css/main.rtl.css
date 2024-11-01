@@ -18131,7 +18131,7 @@ p {
 }
 
 .text-secondary {
-  color: #F0F0F0 !important;
+  color: #CACACA !important;
 }
 
 .text-muted {
@@ -18616,7 +18616,7 @@ p {
   background-color: #FFFFFF;
   border: 1px solid #1089FF;
   position: absolute;
-  bottom: 3.875rem;
+  top: -2.5rem;
   left: 0;
   right: 0;
   z-index: 1;
@@ -18683,6 +18683,7 @@ p {
 .banner .banner-shadow {
   background: linear-gradient(-359.98deg, #0F1217 14.72%, rgba(15, 18, 23, 0.57) 55.54%, rgba(15, 18, 23, 0) 92.63%);
   width: 100%;
+  min-height: 100px;
   position: absolute;
   bottom: 0;
   padding: 0 1.5rem;
