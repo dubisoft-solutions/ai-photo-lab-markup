@@ -16986,8 +16986,13 @@ textarea.form-control-lg {
 
 .form-label {
   font-size: 1rem;
-  color: #FFFFFF;
-  margin-bottom: 1rem;
+  color: #F0F0F0;
+  margin-bottom: 1.125rem;
+}
+@media (max-width: 767.98px) {
+  .form-label {
+    margin-bottom: 0.75rem;
+  }
 }
 
 .invalid-feedback {
@@ -18609,7 +18614,7 @@ p {
   width: 5.125rem;
   height: 5.125rem;
   background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #1089FF;
   position: absolute;
   bottom: 3.875rem;
   left: 0;
@@ -18620,6 +18625,7 @@ p {
   font-size: 3rem;
   justify-content: center;
   align-content: center;
+  background-color: transparent;
 }
 @media (min-width: 992px) {
   .check-circle .icon-style {
