@@ -17100,6 +17100,7 @@ textarea.form-control-lg {
   color: #FFFFFF;
   padding: 0;
   border: 0;
+  width: 1.5rem;
 }
 .navbar .navbar-toggler .dropdown-icon-open {
   display: inline-block;
