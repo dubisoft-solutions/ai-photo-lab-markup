@@ -54,6 +54,14 @@ p {
     text-fill-color: transparent;
 }
 
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.bg-clip {
+    background-clip: text;
+}
+
 @include media-breakpoint-down(md) {
     h1 {
         font-size: 1.875rem!important;
