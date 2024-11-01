@@ -168,7 +168,7 @@
     width: 5.125rem;
     height: 5.125rem;
     background-color: $white;
-    border: 1px solid $white;
+    border: 1px solid $blue;
     position: absolute;
     bottom: 3.875rem;
     right: 0;
@@ -178,6 +178,7 @@
         font-size: 3rem;
         justify-content: center;
         align-content: center;
+        background-color: transparent;
         @include media-breakpoint-up(lg) {
             font-size: 6.25rem;
         }
