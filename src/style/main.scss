@@ -170,7 +170,7 @@
     background-color: $white;
     border: 1px solid $blue;
     position: absolute;
-    bottom: 3.875rem;
+    top: -2.5rem;
     right: 0;
     left: 0;
     z-index: 1;
@@ -222,6 +222,7 @@
     .banner-shadow {
         background: linear-gradient(359.98deg, #0F1217 14.72%, rgba(15,18,23, 0.57) 55.54%, rgba(15, 18, 23, 0) 92.63%);
         width: 100%;
+        min-height: 100px;
         position: absolute;
         bottom: 0;
         padding: 0 1.5rem;
