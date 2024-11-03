@@ -18,9 +18,10 @@
 }
 
 .btn-outline-primary {
+    font-size: .875rem;
     color: $light-gray!important;
     background: linear-gradient($black, $black) padding-box,
-              linear-gradient(to right, #1254FF, #2EF2FF) border-box;
+    linear-gradient(116.97deg, #1254FF -16.64%, #2EF2FF 154.41%) border-box;
     border-radius: 1.875rem;
     border: 1px solid transparent;
 }
@@ -37,6 +38,13 @@
     --bs-btn-color: $light-gray;
     --bs-btn-hover-color: $light-gray;
     --bs-btn-font-size: .75rem;
+}
+
+.btn-close {
+    --bs-btn-close-color: $white;
+    --bs-btn-close-opacity: 1;
+    width: .75rem;
+    height: .75rem;
 }
 
 .footer {
