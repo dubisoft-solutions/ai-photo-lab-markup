@@ -17063,6 +17063,7 @@ textarea.form-control-lg {
   border-color: transparent;
   background-image: none;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .form-control.is-invalid:focus,
