@@ -76,3 +76,17 @@ p {
         font-size: .875rem!important;
     }
 }
+
+
+
+// Loop through each breakpoint and each font size and produce the classes like fs-xx-n, ex: fs-lg-1
+$breakpoint-font-sizes: (1: $h1-font-size, 2: $h1-font-size*0.9, 3: $h1-font-size*0.8, 4: $h1-font-size*0.7, 5: 1.875rem, 6: 1.55rem);
+@each $breakpoint, $min-width in $grid-breakpoints {
+    @each $size, $font-size in $breakpoint-font-sizes {
+        .fs-#{$breakpoint}-#{$size} {
+            @include media-breakpoint-up($breakpoint) {
+                font-size: $font-size!important;
+            }
+        }
+    }
+}
