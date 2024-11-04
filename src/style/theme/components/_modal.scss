@@ -8,11 +8,8 @@
 .modal-dialog {
     padding-top: 5rem;
     .modal-content {
-        padding: 3.75rem 1.5rem 1.875rem 1.5rem;
+        padding: .625rem 1.5rem 2.313rem 1.5rem;
         --bs-modal-border-radius: 1.25rem;
-        @include media-breakpoint-down(lg) {
-            padding: .625rem 1.5rem 2.313rem 1.5rem;
-        }
         .modal-title {
             font-size: .875rem;
             color: $white;

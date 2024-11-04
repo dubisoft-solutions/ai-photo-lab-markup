@@ -66,15 +66,15 @@
 }
 
 .recaptcha-style {
-    transform: scale(0.6);
-    -webkit-transform: scale(0.6);
+    transform: scale(1);
+    -webkit-transform: scale(1);
     transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
-    height: 8vh;
+    height: 15vh;
     @include media-breakpoint-down(md) {
-        transform: scale(0.4);
-        -webkit-transform: scale(0.4);
-        height: 5vh;
+        transform: scale(0.83);
+        -webkit-transform: scale(0.83);
+        height: 10vh;
     }
 }
 
