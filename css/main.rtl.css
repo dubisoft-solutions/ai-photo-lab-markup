@@ -789,7 +789,7 @@ progress {
 }
 :root {
   --bs-breakpoint-xxc: 0;
-  --bs-breakpoint-xs: 390px;
+  --bs-breakpoint-xs: 375px;
   --bs-breakpoint-sm: 576px;
   --bs-breakpoint-md: 768px;
   --bs-breakpoint-lg: 992px;
@@ -1046,7 +1046,7 @@ progress {
   --bs-gutter-y: 7.188rem;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .col-xs {
     flex: 1 0 0%;
   }
@@ -2908,7 +2908,7 @@ progress {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 389.98px) {
+@media (max-width: 374.98px) {
   .table-responsive-xs {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -4285,7 +4285,7 @@ textarea.form-control-lg {
   right: auto;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .dropdown-menu-xs-start {
     --bs-position: start;
   }
@@ -4945,7 +4945,7 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .navbar-expand-xs {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -6176,7 +6176,7 @@ textarea.form-control-lg {
   border-right-width: var(--bs-list-group-border-width);
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .list-group-horizontal-xs {
     flex-direction: row;
   }
@@ -6808,7 +6808,7 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
-@media (max-width: 389.98px) {
+@media (max-width: 374.98px) {
   .modal-fullscreen-xs-down {
     width: 100vw;
     max-width: none;
@@ -7513,7 +7513,7 @@ textarea.form-control-lg {
   --bs-offcanvas-title-line-height: 1.5;
 }
 
-@media (max-width: 389.98px) {
+@media (max-width: 374.98px) {
   .offcanvas-xs {
     position: fixed;
     bottom: 0;
@@ -7529,12 +7529,12 @@ textarea.form-control-lg {
     transition: var(--bs-offcanvas-transition);
   }
 }
-@media (max-width: 389.98px) and (prefers-reduced-motion: reduce) {
+@media (max-width: 374.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-xs {
     transition: none;
   }
 }
-@media (max-width: 389.98px) {
+@media (max-width: 374.98px) {
   .offcanvas-xs.offcanvas-start {
     top: 0;
     right: 0;
@@ -7573,7 +7573,7 @@ textarea.form-control-lg {
     visibility: visible;
   }
 }
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .offcanvas-xs {
     --bs-offcanvas-height: auto;
     --bs-offcanvas-border-width: 0;
@@ -8575,7 +8575,7 @@ textarea.form-control-lg {
   z-index: 1020;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .sticky-xs-top {
     position: sticky;
     top: 0;
@@ -10862,7 +10862,7 @@ textarea.form-control-lg {
   z-index: 3 !important;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .float-xs-start {
     float: right !important;
   }
@@ -18212,6 +18212,354 @@ p {
     font-size: 0.875rem !important;
   }
 }
+.fs-xxc-1 {
+  font-size: 3.313rem !important;
+}
+
+.fs-xxc-2 {
+  font-size: 2.9817rem !important;
+}
+
+.fs-xxc-3 {
+  font-size: 2.6504rem !important;
+}
+
+.fs-xxc-4 {
+  font-size: 2.3191rem !important;
+}
+
+.fs-xxc-5 {
+  font-size: 1.875rem !important;
+}
+
+.fs-xxc-6 {
+  font-size: 1.55rem !important;
+}
+
+@media (min-width: 375px) {
+  .fs-xs-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .fs-xs-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .fs-xs-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .fs-xs-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .fs-xs-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .fs-xs-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .fs-sm-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .fs-sm-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .fs-sm-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .fs-sm-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .fs-sm-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .fs-sm-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fs-xxl-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fs-xxl-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fs-xxl-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fs-xxl-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fs-xxl-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fs-xxl-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 1548px) {
+  .fs-xxxl-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 1548px) {
+  .fs-xxxl-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 1548px) {
+  .fs-xxxl-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 1548px) {
+  .fs-xxxl-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 1548px) {
+  .fs-xxxl-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 1548px) {
+  .fs-xxxl-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fs-xxxxl-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fs-xxxxl-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fs-xxxxl-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fs-xxxxl-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fs-xxxxl-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fs-xxxxl-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fs-xxxxxl-1 {
+    font-size: 3.313rem !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fs-xxxxxl-2 {
+    font-size: 2.9817rem !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fs-xxxxxl-3 {
+    font-size: 2.6504rem !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fs-xxxxxl-4 {
+    font-size: 2.3191rem !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fs-xxxxxl-5 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fs-xxxxxl-6 {
+    font-size: 1.55rem !important;
+  }
+}
+
 .container-fluid-right {
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
@@ -18531,6 +18879,10 @@ p {
   }
 }
 
+.badge-sm {
+  padding: 0.375rem 0.8rem;
+}
+
 .text-copyright {
   color: #727C89;
   font-size: 0.75rem;
@@ -18749,7 +19101,7 @@ p {
   width: 100%;
   min-height: 100px;
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   padding: 0 1.5rem;
 }
 .banner .banner-shadow .banner-logo {
