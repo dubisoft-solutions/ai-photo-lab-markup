@@ -47,6 +47,10 @@
     }
 }
 
+.badge-sm {
+    padding: .375rem .8rem;
+}
+
 .text-copyright {
     color: $dark-gray;
     font-size: .75rem;
@@ -239,7 +243,7 @@
         width: 100%;
         min-height: 100px;
         position: absolute;
-        bottom: 0;
+        bottom: -1rem;
         padding: 0 1.5rem;
         .banner-logo {
             height: .875rem;
