@@ -17423,7 +17423,6 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   color: #FFFFFF;
 }
-
 .accordion-button {
   font-size: 1rem;
   border-radius: 1.5rem;
@@ -18172,6 +18171,10 @@ p {
 
 .bg-light-gray {
   background-color: #F0F0F0;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(-116.97deg, #1254FF -16.64%, #2EF2FF 154.41%);
 }
 
 .bg-clip {
