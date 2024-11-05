@@ -31,7 +31,7 @@
         line-height: 1.063rem;
         border-radius: 1.5rem;
         --bs-accordion-btn-padding-x: 1.125rem;
-        --bs-accordion-btn-padding-y: 1.25rem;
+        --bs-accordion-btn-padding-y: 1.125rem;
         --bs-accordion-inner-border-radius: 1.5rem;
     }
 }
@@ -39,6 +39,7 @@
 .accordion-button:not(.collapsed) {
     color: $light-gray;
     box-shadow: none;
+    padding-bottom: .75rem!important;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -56,4 +57,5 @@
 
 .accordion-body {
     font-size: .875rem;
+    line-height: 1.25;
 }
