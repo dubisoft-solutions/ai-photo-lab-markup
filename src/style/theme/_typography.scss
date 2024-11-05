@@ -37,6 +37,10 @@ p {
     background-color: $light-gray;
 }
 
+.bg-gradient-blue {
+    background: $gradient-blue;
+}
+
 .bg-clip {
     background-clip: text;
 }

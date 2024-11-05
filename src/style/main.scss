@@ -48,7 +48,7 @@
 }
 
 .badge-sm {
-    padding: .375rem .8rem;
+    padding: .3rem 1rem;
 }
 
 .text-copyright {
@@ -212,7 +212,7 @@
 
 .banner {
     position: relative;
-    height: 102vw;
+    height: 98vw;
     @media (min-width: 576px) {
         height: 98vw;
     }
@@ -270,5 +270,13 @@
         bottom: 0;
         right: 0;
         left: 0;
+    }
+}
+
+.terms {
+    .fs-10 {
+        @include media-breakpoint-up(md) {
+            font-size: .875rem!important;
+        }
     }
 }
