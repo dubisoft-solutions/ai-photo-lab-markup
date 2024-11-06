@@ -1,3 +1,9 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 a {
     text-decoration: none;
     color: $dark-gray;
@@ -8,8 +14,29 @@ textarea {
     resize: none;
 }
 
-.border-1 {
-    border-width: .016rem!important;
+.text-copyright {
+    color: $dark-gray;
+    font-size: .75rem;
+}
+
+.icon-style {
+    background-color: $light-gray;
+    width: 1.625rem;
+    height: 1.625rem;
+}
+
+.cld-video-player {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.two-lines-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .rounded-top {

@@ -1,0 +1,113 @@
+.video-mode {
+    .img-sm {
+        width: 100%;
+        max-height: 11.625rem;
+        object-fit: cover;
+        border-radius: .625rem;
+        @include media-breakpoint-down(lg) {
+            max-height: 6.625rem;
+        }
+    }
+    .item-preview {
+        display: block;
+        height: 6.625rem;
+        object-fit: cover;
+        width: auto;
+        padding: 0;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 3.75rem;
+            width: 100%;
+            bottom: -1rem;
+            left: 0;
+            right: 0;
+            background: linear-gradient(1deg, #0F1217 0, rgba(15, 18, 23, 0) 100%);
+            z-index: 1;
+            @include media-breakpoint-down(md) {
+                bottom: 0;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            max-height: 6.625rem;
+        }
+    }
+    .info {
+        position: absolute;
+        left: 1.875rem;
+        bottom: .25rem;
+        color: $light-gray;
+        text-align: left;
+        z-index: 1;
+    }
+}
+
+.item-preview {
+    display: block;
+    height: 11.625rem;
+    object-fit: cover;
+    width: auto;
+    padding: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(1deg, #0F1217 0, rgba(15, 18, 23, 0) 100%);
+        z-index: 1;
+    }
+    @include media-breakpoint-down(md) {
+        max-height: 11.625rem;
+    }
+}
+
+.info {
+    position: absolute;
+    left: .5rem;
+    bottom: .25rem;
+    color: $light-gray;
+    text-align: left;
+    z-index: 1;
+    @include media-breakpoint-down(md) {
+        left: .25rem;
+        bottom: .25rem;
+    }
+}
+
+.check-circle {
+    width: 5.125rem;
+    height: 5.125rem;
+    background-color: $white;
+    border: 1px solid $blue;
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    .icon-style {
+        font-size: 3rem;
+        justify-content: center;
+        align-content: center;
+        background-color: transparent;
+        @include media-breakpoint-up(lg) {
+            font-size: 6.25rem;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        position: relative;
+        bottom: 0;
+        width: 11.313rem;
+        height: 11.313rem;
+    }
+}
+
+.terms {
+    .fs-10 {
+        @include media-breakpoint-up(md) {
+            font-size: .875rem!important;
+        }
+    }
+}
