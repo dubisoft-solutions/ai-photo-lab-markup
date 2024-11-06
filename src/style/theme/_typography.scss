@@ -45,6 +45,14 @@ p {
     background-clip: text;
 }
 
+.bg-black {
+    background-color: $black;
+}
+
+.text-shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 @include media-breakpoint-down(md) {
     h1 {
         font-size: 1.875rem!important;

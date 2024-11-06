@@ -12,6 +12,11 @@ textarea {
     border-width: .016rem!important;
 }
 
+.rounded-top {
+    border-top-right-radius: .625rem!important;
+    border-top-left-radius: .625rem!important;
+}
+
 .py-7 {
     @include media-breakpoint-down(md) {
         padding-top: 5.5rem!important;
