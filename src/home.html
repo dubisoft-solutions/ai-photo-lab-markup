@@ -8,7 +8,7 @@
         //= html_partials/header.html
         <div class="main">
             <!-- Main section -->
-            <section class="mt-6 mb-6 pb-2">
+            <section class="mt-6 mb-lg-6 mb-4 pb-2">
                 <div class="container-fluid container-lg px-lg-3 px-0 mb-lg-5 mb-4">
                     <div class="ratio ratio-16x9">
                         <center>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="container d-flex justify-content-center px-4">
                     <div class="banner-shadow text-start">
-                        <span class="badge text-bg-warning mb-3">Ai technology</span>
+                        <span class="badge badge-sm fs-9 rounded-2 text-bg-warning mb-3">Ai technology</span>
                         <h1 class="text-capitalize">Unleash the Power of <span class="d-lg-block d-inline"><span class="text-gradient-primary">AI</span> for <span class="text-gradient-primary">Stunning Visuals</span></span></h1>
                     </div>
                 </div>
@@ -159,7 +159,8 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-lg-5 text-lg-center">
-                            <a href="editor-mode.html" class="btn btn-outline-primary btn-lg d-flex justify-content-center align-items-center mb-2"><span class="pe-2"><img src="img/magic-pen.svg" alt="Editor"></span>Go to Editor Mode</a>
+                            <a class="btn btn-outline-primary btn-lg d-flex justify-content-center align-items-center mb-2" data-bs-toggle="modal" data-bs-target="#createModal">Go to Editor Mode</a>
+                            <!-- <a href="editor-mode.html" class="btn btn-outline-primary btn-lg d-flex justify-content-center align-items-center mb-2"><span class="pe-2"><img src="img/magic-pen.svg" alt="Editor"></span>Go to Editor Mode</a> -->
                         </div>
                     </div>
                 </div>
@@ -167,6 +168,33 @@
 
             <!-- Footer -->
             //= html_partials/footer.html
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="createModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content px-0">
+                    <div class="modal-header bg-gradient-blue d-block pt-0">
+                        <div class="text-end">
+                            <button type="button" class="btn-close mt-2" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <span class="badge badge-sm fs-9 rounded-2 text-bg-warning mb-2">Ai technology</span>
+                        <h1 class="text-capitalize">Welcome <span class="d-lg-block d-inline">to Ai Photo Lab!</span></h1>
+                    </div>
+                    
+                    <div class="modal-body border-0 row justify-content-center">
+                        <p class="modal-title mb-4">AI Pix is an innovative AI-powered service for creating, enhancing, and transforming images.</p>
+                        <p class="modal-title mb-4">You are now subscribed to AI Photo Lab,
+                        start creating now! </p>
+                        <div class="col-10">
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-outline-primary fs-8 d-flex justify-content-center align-items-center" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed"><span class="d-grid me-2"><img src="img/magic-pen.svg" alt="Start Creating"></span>Start Creating</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
