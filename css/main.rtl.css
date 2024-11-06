@@ -17423,6 +17423,10 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   color: #FFFFFF;
 }
+.modal-sm {
+  --bs-modal-width: 343px;
+}
+
 .accordion-button {
   font-size: 1rem;
   border-radius: 1.5rem;
@@ -18097,6 +18101,11 @@ textarea {
   border-width: 0.016rem !important;
 }
 
+.rounded-top {
+  border-top-left-radius: 0.625rem !important;
+  border-top-right-radius: 0.625rem !important;
+}
+
 @media (max-width: 767.98px) {
   .py-7 {
     padding-top: 5.5rem !important;
@@ -18179,6 +18188,14 @@ p {
 
 .bg-clip {
   background-clip: text;
+}
+
+.bg-black {
+  background-color: #0F1217;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 767.98px) {
@@ -18809,7 +18826,7 @@ p {
   width: 100%;
 }
 
-.main {
+.content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;

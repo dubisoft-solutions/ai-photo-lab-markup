@@ -8,7 +8,7 @@
 </head>
 
 <body class="position-relative" data-bs-theme="dark">
-    <main>
+    <div class="content">
         <!-- Header -->
         <header>
             <nav class="navbar navbar-expand-xxl top-navbar navbar-dark fixed-top scrolled">
@@ -68,68 +68,67 @@
             </nav>
         </header>
 
-        <div class="main">
-            <section class="account mt-lg-7 pt-lg-4 mt-5 pt-4 pb-5 mb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-1">
-                            <a href="home.html">
-                                <div class="d-flex align-items-center pt-lg-4 pb-lg-5 pb-5 mb-lg-3 mb-1">
-                                    <div class="icon-style rounded-circle d-flex justify-content-center align-items-center me-3">
-                                        <icon class="icon icon-arrow-left text-dark fs-8 d-grid"></icon>
-                                    </div>
-                                    <h2 class="mb-0 scroll-to-top-marker">Account</h2>
+        <!-- Main section -->
+        <main class="account mt-lg-7 pt-lg-4 mt-5 pt-4 pb-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-1">
+                        <a href="home.html">
+                            <div class="d-flex align-items-center pt-lg-4 pb-lg-5 pb-5 mb-lg-3 mb-1">
+                                <div class="icon-style rounded-circle d-flex justify-content-center align-items-center me-3">
+                                    <icon class="icon icon-arrow-left text-dark fs-8 d-grid"></icon>
                                 </div>
-                            </a>
-                        </div>
+                                <h2 class="mb-0 scroll-to-top-marker">Account</h2>
+                            </div>
+                        </a>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-lg-8 col-12 offset-lg-2 mb-lg-0 mb-5">
-                            <p class="fs-6 text-white text-start mb-lg-3 mb-4 pb-lg-0 pb-3">Credit balance:</p>
+                <div class="row">
+                    <div class="col-lg-8 col-12 offset-lg-2 mb-lg-0 mb-5">
+                        <p class="fs-6 text-white text-start mb-lg-3 mb-4 pb-lg-0 pb-3">Credit balance:</p>
 
-                            <div class="text-center mb-5 pb-2">
-                                <span class="badge text-bg-dark d-inline-flex align-items-center me-3">
-                                    <span class="d-grid me-2"><img src="img/circle-xl.svg" alt="Circle"></span>
-                                    150
-                                </span>
-                            </div>
-                            
-                            <p class="fs-6 text-white mb-3 text-start">Subscription:</p>
-                            <p class="mb-2 lh-1">You are subscribed to Ai Photo Lab since <span class="text-primary">XX/XX/XX.</span> <br>If you wish to unsubscribe click on the link below.</p>
-                            <p class="mb-5">If you unsubscribe, you will no longer have access to your files created with Ai Photo Lab.</p>
+                        <div class="text-center mb-5 pb-2">
+                            <span class="badge text-bg-dark d-inline-flex align-items-center me-3">
+                                <span class="d-grid me-2"><img src="img/circle-xl.svg" alt="Circle"></span>
+                                150
+                            </span>
+                        </div>
+                        
+                        <p class="fs-6 text-white mb-3 text-start">Subscription:</p>
+                        <p class="mb-2 lh-1">You are subscribed to Ai Photo Lab since <span class="text-primary">XX/XX/XX.</span> <br>If you wish to unsubscribe click on the link below.</p>
+                        <p class="mb-5">If you unsubscribe, you will no longer have access to your files created with Ai Photo Lab.</p>
 
-                            <div class="text-center">
-                                <a class="btn-link text-primary" data-bs-toggle="modal" data-bs-target="#liveSubscription">Unsubscribe</a>
-                            </div>
+                        <div class="text-center">
+                            <a class="btn-link text-primary" data-bs-toggle="modal" data-bs-target="#liveSubscription">Unsubscribe</a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </main>
 
-            <!-- Footer -->
-            <footer class="footer mt-auto pt-lg-5 pt-0">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-9 col-md-5 col-xl-3 text-center d-lg-inline d-grid align-items-center">
-                            <ul class="list-inline d-flex justify-content-around mb-3 pb-1 ps-0">
-                                <li class="list-inline-item d-inline px-1 px-md-3 me-0">
-                                    <a href="faq.html" class="btn-link text-uppercase text-decoration-none">FAQ</a>
-                                </li>
-                                <li class="list-inline-item d-inline px-1 px-md-3 me-0">
-                                    <a href="contact-us.html" class="btn-link text-uppercase text-decoration-none">Contact us</a>
-                                </li>
-                                <li class="list-inline-item d-inline px-1 px-md-3 me-0">
-                                    <a href="terms.html" class="btn-link text-uppercase text-decoration-none">T&C</a>
-                                </li>
-                            </ul>
-            
-                            <p class="text-copyright mb-2">@NEXTMOVE DIGITAL 2024</p>
-                        </div>
+        <!-- Footer -->
+        <footer class="footer mt-auto pt-lg-5 pt-0">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-9 col-md-5 col-xl-3 text-center d-lg-inline d-grid align-items-center">
+                        <ul class="list-inline d-flex justify-content-around mb-3 pb-1 ps-0">
+                            <li class="list-inline-item d-inline px-1 px-md-3 me-0">
+                                <a href="faq.html" class="btn-link text-uppercase text-decoration-none">FAQ</a>
+                            </li>
+                            <li class="list-inline-item d-inline px-1 px-md-3 me-0">
+                                <a href="contact-us.html" class="btn-link text-uppercase text-decoration-none">Contact us</a>
+                            </li>
+                            <li class="list-inline-item d-inline px-1 px-md-3 me-0">
+                                <a href="terms.html" class="btn-link text-uppercase text-decoration-none">T&C</a>
+                            </li>
+                        </ul>
+        
+                        <p class="text-copyright mb-2">@NEXTMOVE DIGITAL 2024</p>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
 
         <!-- Modal -->
         <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
@@ -170,8 +169,7 @@
                 </div>
             </div>
         </div>
-
-    </main>
+    </div>
 </body>
 
 <script src="js/main.js"></script>
