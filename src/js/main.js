@@ -112,6 +112,80 @@ function carouselsSetup(userRtl) {
             })
         }
     });
+
+    $(function() {
+        if ($('.style-picture .owl-carousel').length > 0) {
+            $('.style-picture .owl-carousel').owlCarousel({
+                loop: true,
+                rtl: rtl,
+                margin: 10,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                nav: false,
+                dots: false,
+
+                responsive: {
+                    0: {
+                        items: 2,
+                        stagePadding: 5
+                    },
+                    576: {
+                        items: 4,
+                        stagePadding: 10
+                    },
+                    768: {
+                        items: 4,
+                        stagePadding: 10
+                    },
+                    1200: {
+                        items: 5,
+                        stagePadding: 46
+                    },
+                    1400: {
+                        items: 8
+                    }
+                }
+            })
+        }
+    });
+
+    $(function() {
+        if ($('.btn-groups .owl-carousel').length > 0) {
+            $('.btn-groups .owl-carousel').owlCarousel({
+                loop: true,
+                rtl: rtl,
+                margin: 5,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                nav: false,
+                dots: false,
+
+                responsive: {
+                    0: {
+                        items: 3,
+                        stagePadding: 5
+                    },
+                    576: {
+                        items: 3,
+                        stagePadding: 5
+                    },
+                    768: {
+                        items: 4,
+                        stagePadding: 10
+                    },
+                    1200: {
+                        items: 5,
+                        stagePadding: 46
+                    },
+                    1400: {
+                        items: 6
+                    }
+                }
+            })
+        }
+    });
 }
 
 /**

@@ -34,16 +34,18 @@ $icon-name-check: "\E006";
 $icon-name-circle: "\E007"; 
 $icon-name-clock: "\E008"; 
 $icon-name-close: "\E009"; 
-$icon-name-football: "\E00A"; 
-$icon-name-menu-close: "\E00B"; 
-$icon-name-menu-open: "\E00C"; 
-$icon-name-menu: "\E00D"; 
-$icon-name-minus: "\E00E"; 
-$icon-name-plus-circle: "\E00F"; 
-$icon-name-plus: "\E010"; 
-$icon-name-prev: "\E011"; 
-$icon-name-racquet: "\E012"; 
-$icon-name-user: "\E013"; 
+$icon-name-female: "\E00A"; 
+$icon-name-football: "\E00B"; 
+$icon-name-male: "\E00C"; 
+$icon-name-menu-close: "\E00D"; 
+$icon-name-menu-open: "\E00E"; 
+$icon-name-menu: "\E00F"; 
+$icon-name-minus: "\E010"; 
+$icon-name-plus-circle: "\E011"; 
+$icon-name-plus: "\E012"; 
+$icon-name-prev: "\E013"; 
+$icon-name-racquet: "\E014"; 
+$icon-name-user: "\E015"; 
 
 
 @function icon-char($filename) {
@@ -76,35 +78,41 @@ $icon-name-user: "\E013";
 	@if $filename == close {
 		$char: "\E009";
 	}
-	@if $filename == football {
+	@if $filename == female {
 		$char: "\E00A";
 	}
-	@if $filename == menu-close {
+	@if $filename == football {
 		$char: "\E00B";
 	}
-	@if $filename == menu-open {
+	@if $filename == male {
 		$char: "\E00C";
 	}
-	@if $filename == menu {
+	@if $filename == menu-close {
 		$char: "\E00D";
 	}
-	@if $filename == minus {
+	@if $filename == menu-open {
 		$char: "\E00E";
 	}
-	@if $filename == plus-circle {
+	@if $filename == menu {
 		$char: "\E00F";
 	}
-	@if $filename == plus {
+	@if $filename == minus {
 		$char: "\E010";
 	}
-	@if $filename == prev {
+	@if $filename == plus-circle {
 		$char: "\E011";
 	}
-	@if $filename == racquet {
+	@if $filename == plus {
 		$char: "\E012";
 	}
-	@if $filename == user {
+	@if $filename == prev {
 		$char: "\E013";
+	}
+	@if $filename == racquet {
+		$char: "\E014";
+	}
+	@if $filename == user {
+		$char: "\E015";
 	}
 
 	@return $char;
@@ -148,8 +156,14 @@ $icon-name-user: "\E013";
 .icon-close {
 	@include icon(close);
 }
+.icon-female {
+	@include icon(female);
+}
 .icon-football {
 	@include icon(football);
+}
+.icon-male {
+	@include icon(male);
 }
 .icon-menu-close {
 	@include icon(menu-close);

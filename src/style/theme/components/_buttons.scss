@@ -27,6 +27,32 @@
     padding: .7rem 1.5rem;
 }
 
+.btn-outline-muted {
+    font-size: .875rem;
+    color: $dark-gray;
+    background: transparent;
+    border-radius: 1.875rem;
+    border: 1px solid $dark-gray;
+    padding: .7rem 1.5rem;
+    &:focus {
+        background:$gradient-blue;
+        color: $white;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: .625rem .85rem;
+    }
+}
+
+.btn-check+.btn:hover {
+    background: $gradient-blue;
+}
+
+.btn-group-vertical>.btn-check:checked+.btn, .btn-group-vertical>.btn-check:focus+.btn, .btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn-check:checked+.btn, .btn-group>.btn-check:focus+.btn, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
+    background: $gradient-blue;
+    color: $white;
+    border-color: $blue;
+}
+
 .btn-link {
     font-size: 1rem;
     padding: 0;
@@ -46,6 +72,11 @@
     --bs-btn-close-opacity: 1;
     width: .75rem;
     height: .75rem;
+    &.btn-position {
+        position: absolute;
+        top: 1.75rem;
+        right: 1.25rem;
+    }
 }
 
 .footer {

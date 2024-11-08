@@ -14,12 +14,20 @@
             font-size: .875rem;
             color: $white;
         }
-        .modal-header {
-            // border-radius-top: 
-        }
     }
 }
 
 .modal-sm {
     --bs-modal-width: 343px;
+}
+
+.modal-decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-img-top{
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
 }
