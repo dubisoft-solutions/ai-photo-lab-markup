@@ -15,6 +15,10 @@
     color: $light-gray!important;
     background: $gradient-blue!important;
     border: none;
+    &.disabled {
+        border: 1px solid $dark-gray!important;
+        background: $dark-blue!important;
+    }
 }
 
 .btn-outline-primary {

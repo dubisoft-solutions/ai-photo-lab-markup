@@ -28,6 +28,9 @@ textarea {
 .icon-gender-circle {
     width: 6.063rem;
     height: 6.063rem;
+    &:hover {
+        border: 1px solid $blue;
+    }
 }
 
 .cld-video-player {
@@ -99,6 +102,10 @@ textarea {
     background: $gradient-blue;
 }
 
+.bg-gradient-dark {
+    background: $gradient-dark;
+}
+
 .bg-clip {
     background-clip: text;
 }
@@ -113,6 +120,16 @@ textarea {
 
 .shadow-sm {
     filter: drop-shadow(0 10px 30px rgba(8, 15, 52, 0.06));
+}
+
+.border-dashed {
+    &:hover {
+        border: dashed 1px $blue;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .row-cols-7>* {

@@ -46,6 +46,7 @@ $grid-breakpoints: (xxc:0, xs: 375px, sm: 576px, md: 768px, lg: 992px, xl: 1200p
 $container-max-widths: (xc: 100%, sm: 540px, md: 720px, lg: 960px, xl: 1160px, xxl: 1236px, xxxl: 1375px, xxxxl: 1747px, xxxxxl: 2387px);
 // dropdown
 $gradient-blue: linear-gradient(116.97deg, #1254FF -16.64%, #2EF2FF 154.41%);
+$gradient-dark: linear-gradient(50deg, rgba(29,32,35,1) 28%, rgba(16,137,255,1) 225%);;
 $dropdown-padding-x: 1rem;
 $dropdown-padding-y: 1rem;
 $dropdown-item-padding-y: 1rem;
