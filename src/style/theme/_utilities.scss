@@ -47,7 +47,12 @@ textarea {
     height: 3.125rem;
     &:hover {
         background: $gradient-blue;
-        color: $white;
+    }
+    .icon {
+        color: $dark-gray;
+        &:hover {
+            color: $white;
+        }
     }
 }
 

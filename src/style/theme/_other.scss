@@ -4,9 +4,6 @@
         height: 11.625rem;
         object-fit: cover;
         border-radius: .625rem;
-        @include media-breakpoint-down(lg) {
-            height: 6.625rem;
-        }
     }
     .item-preview {
         display: block;
@@ -136,6 +133,9 @@
     &.blur-effect {
         filter: blur(4px);
         -webkit-filter: blur(4px);
+    }
+    @include media-breakpoint-down(md) {
+        height: 25rem;
     }
 }
 
