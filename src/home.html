@@ -7,8 +7,28 @@
         <!-- Header -->
         //= html_partials/header.html
 
+        <section class="banner banner-home d-lg-none d-block mt-5 pt-1">
+            <!-- <img src="img/landing-hero.png" alt="Banner image" class="banner-bg"> -->
+            <div class="ratio ratio-16x9">
+                <center>
+                    <video
+                        id="video-player"
+                        controls
+                        muted
+                        class="cld-video-player cld-video-player-skin-dark cld-fluid">
+                    </video>
+                </center>
+            </div>
+            <div class="banner-shadow text-lg-center text-start d-lg-none d-flex align-items-end">
+                <div class="container px-0 px-sm-4 px-md-5">
+                    <span class="badge badge-sm rounded-2 fs-9 text-bg-warning mb-2">Ai technology</span>
+                    <h1 class="text-capitalize mb-0 fs-xxc-6 fs-xs-5">Unleash the Power of <span class="text-gradient-primary d-block">AI <span class="bg-light-gray bg-clip">for</span> Stunning Visuals</span></h1>
+                </div>
+            </div>
+        </section>
+
         <!-- Main section -->
-        <main class="mt-6 mb-lg-6 mb-4 pb-2">
+        <main class="mt-6 mb-lg-6 mb-4 pb-2 d-lg-block d-none">
             <div class="container-fluid container-lg px-lg-3 px-0 mb-lg-5 mb-4">
                 <div class="ratio ratio-16x9">
                     <center>
@@ -29,12 +49,12 @@
             </div>
         </main>
     
-        <section class="creative-mode mb-6">
+        <section class="creative-mode mt-5 pt-3 mb-4 pb-3">
             <div class="container-fluid-right">
                 <div class="row mb-4">
                     <div class="col-lg-6 offset-lg-1">
-                        <h2 class="mb-3 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-1.svg" alt="Step 1"></span>Creative Mode</h2>
-                        <p>Dive into endless creative possibilities:predict your baby’s appearance, transform into a movie character, enhance your body or face, and more!</p>
+                        <h2 class="mb-2 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-1.svg" alt="Step 1"></span>Creative Mode</h2>
+                        <p class="lh-1">Dive into endless creative possibilities:predict your baby’s appearance, transform into a movie character, enhance your body or face, and more!</p>
                     </div>
                 </div>
 
@@ -112,18 +132,18 @@
             </div>
         </section>
 
-        <section class="video-mode mb-6">
+        <section class="video-mode mb-4 pb-2">
             <div class="container">
-                <div class="row mb-4">
+                <div class="row mb-4 pb-3">
                     <div class="col-lg-6 offset-lg-1">
                         <h2 class="mb-3 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-2.svg" alt="Step 2"></span>Video Mode</h2>
-                        <p>AI Video is here! Swap your face in popular videos and change your expressions with live portrait</p>
+                        <p class="lh-1">AI Video is here! Swap your face in popular videos and change your expressions with live portrait</p>
                     </div>
                 </div>
 
                 <div class="row pb-lg-0 pb-2">
                     <div class="col-12 col-lg-4 offset-lg-2 offset-0 position-relative mb-lg-0 mb-3">
-                        <a href="detail-item.html">
+                        <a href="#">
                             <span class="item-preview">
                                 <img src="img/video-mode/face-swap.png" alt="Face Swap" class="img-sm">
                             </span>
@@ -134,7 +154,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-lg-4 position-relative">
-                        <a href="detail-item.html">
+                        <a href="#">
                             <span class="item-preview">
                                 <img src="img/video-mode/live-portrait.png" alt="Live Portrait" class="img-sm">
                             </span>
@@ -153,7 +173,7 @@
                 <div class="row mb-4">
                     <div class="col-lg-6 offset-lg-1">
                         <h2 class="mb-3 d-flex align-items-center"><span class="d-grid me-3"><img src="img/step-3.svg" alt="Step 3"></span>Editor Mode</h2>
-                        <p class="mb-4">Unlock advanced tools to elevate your visual content: remove backgrounds, erase objects, upscale images, and more.</p>
+                        <p class="lh-1 mb-3">Unlock advanced tools to elevate your visual content: remove backgrounds, erase objects, upscale images, and more.</p>
                         
                     </div>
                 </div>
