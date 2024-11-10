@@ -25,12 +25,39 @@ textarea {
     height: 1.625rem;
 }
 
+.icon-refresh-style {
+    background-color: $light-gray;
+    width: 1.938rem;
+    height: 1.938rem;
+    position: absolute;
+    top: 1.125rem;
+    left: 1.125rem;
+}
+
 .icon-gender-circle {
     width: 6.063rem;
     height: 6.063rem;
     &:hover {
         border: 1px solid $blue;
     }
+}
+
+.icon-edit-circle {
+    width: 3.125rem;
+    height: 3.125rem;
+    &:hover {
+        background: $gradient-blue;
+        color: $white;
+    }
+}
+
+.icon-photo-circle {
+    background-color: $light-gray;
+    width: 1.375rem;
+    height: 1.375rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .cld-video-player {

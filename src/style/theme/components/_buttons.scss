@@ -47,6 +47,20 @@
     }
 }
 
+.btn-secondary {
+    font-size: .875rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $white;
+    border-radius: 3.75rem;
+    padding: .625rem;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .btn-check+.btn:hover {
     background: $gradient-blue;
 }

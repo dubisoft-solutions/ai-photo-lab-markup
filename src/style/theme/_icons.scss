@@ -36,16 +36,19 @@ $icon-name-clock: "\E008";
 $icon-name-close: "\E009"; 
 $icon-name-female: "\E00A"; 
 $icon-name-football: "\E00B"; 
-$icon-name-male: "\E00C"; 
-$icon-name-menu-close: "\E00D"; 
-$icon-name-menu-open: "\E00E"; 
-$icon-name-menu: "\E00F"; 
-$icon-name-minus: "\E010"; 
-$icon-name-plus-circle: "\E011"; 
-$icon-name-plus: "\E012"; 
-$icon-name-prev: "\E013"; 
-$icon-name-racquet: "\E014"; 
-$icon-name-user: "\E015"; 
+$icon-name-loading: "\E00C"; 
+$icon-name-male: "\E00D"; 
+$icon-name-menu-close: "\E00E"; 
+$icon-name-menu-open: "\E00F"; 
+$icon-name-menu: "\E010"; 
+$icon-name-minus: "\E011"; 
+$icon-name-plus-circle: "\E012"; 
+$icon-name-plus: "\E013"; 
+$icon-name-prev: "\E014"; 
+$icon-name-racquet: "\E015"; 
+$icon-name-refresh: "\E016"; 
+$icon-name-remove-bg: "\E017"; 
+$icon-name-user: "\E018"; 
 
 
 @function icon-char($filename) {
@@ -84,35 +87,44 @@ $icon-name-user: "\E015";
 	@if $filename == football {
 		$char: "\E00B";
 	}
-	@if $filename == male {
+	@if $filename == loading {
 		$char: "\E00C";
 	}
-	@if $filename == menu-close {
+	@if $filename == male {
 		$char: "\E00D";
 	}
-	@if $filename == menu-open {
+	@if $filename == menu-close {
 		$char: "\E00E";
 	}
-	@if $filename == menu {
+	@if $filename == menu-open {
 		$char: "\E00F";
 	}
-	@if $filename == minus {
+	@if $filename == menu {
 		$char: "\E010";
 	}
-	@if $filename == plus-circle {
+	@if $filename == minus {
 		$char: "\E011";
 	}
-	@if $filename == plus {
+	@if $filename == plus-circle {
 		$char: "\E012";
 	}
-	@if $filename == prev {
+	@if $filename == plus {
 		$char: "\E013";
 	}
-	@if $filename == racquet {
+	@if $filename == prev {
 		$char: "\E014";
 	}
-	@if $filename == user {
+	@if $filename == racquet {
 		$char: "\E015";
+	}
+	@if $filename == refresh {
+		$char: "\E016";
+	}
+	@if $filename == remove-bg {
+		$char: "\E017";
+	}
+	@if $filename == user {
+		$char: "\E018";
 	}
 
 	@return $char;
@@ -162,6 +174,9 @@ $icon-name-user: "\E015";
 .icon-football {
 	@include icon(football);
 }
+.icon-loading {
+	@include icon(loading);
+}
 .icon-male {
 	@include icon(male);
 }
@@ -188,6 +203,12 @@ $icon-name-user: "\E015";
 }
 .icon-racquet {
 	@include icon(racquet);
+}
+.icon-refresh {
+	@include icon(refresh);
+}
+.icon-remove-bg {
+	@include icon(remove-bg);
 }
 .icon-user {
 	@include icon(user);

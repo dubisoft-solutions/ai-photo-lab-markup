@@ -127,8 +127,8 @@ function carouselsSetup(userRtl) {
 
                 responsive: {
                     0: {
-                        items: 2,
-                        stagePadding: 5
+                        items: 3,
+                        stagePadding: 10
                     },
                     576: {
                         items: 4,

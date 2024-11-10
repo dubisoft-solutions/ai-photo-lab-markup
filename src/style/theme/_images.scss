@@ -1,16 +1,23 @@
 .img-xs {
+    width: 10rem;
     height: 7.25rem;
     object-fit: cover;
     border-radius: .625rem;
 }
 
 .img-sm {
+    height: 7.25rem;
+    object-fit: cover;
+    border-radius: .625rem;
+}
+
+.img-md {
     width: 100%;
-    max-height: 11.625rem;
+    height: 8rem;
     object-fit: cover;
     border-radius: 1.25rem;
     @include media-breakpoint-down(md) {
-        max-height: 11.625rem;
+        height: 6.625rem;
     }
 }
 
