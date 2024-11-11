@@ -37,20 +37,21 @@ $icon-name-close: "\E009";
 $icon-name-female: "\E00A"; 
 $icon-name-football: "\E00B"; 
 $icon-name-loading: "\E00C"; 
-$icon-name-male: "\E00D"; 
-$icon-name-menu-close: "\E00E"; 
-$icon-name-menu-open: "\E00F"; 
-$icon-name-menu: "\E010"; 
-$icon-name-minus: "\E011"; 
-$icon-name-plus-circle: "\E012"; 
-$icon-name-plus: "\E013"; 
-$icon-name-prev: "\E014"; 
-$icon-name-racquet: "\E015"; 
-$icon-name-refresh: "\E016"; 
-$icon-name-remove-bg: "\E017"; 
-$icon-name-replace-bg: "\E018"; 
-$icon-name-upscale: "\E019"; 
-$icon-name-user: "\E01A"; 
+$icon-name-lock: "\E00D"; 
+$icon-name-male: "\E00E"; 
+$icon-name-menu-close: "\E00F"; 
+$icon-name-menu-open: "\E010"; 
+$icon-name-menu: "\E011"; 
+$icon-name-minus: "\E012"; 
+$icon-name-plus-circle: "\E013"; 
+$icon-name-plus: "\E014"; 
+$icon-name-prev: "\E015"; 
+$icon-name-racquet: "\E016"; 
+$icon-name-refresh: "\E017"; 
+$icon-name-remove-bg: "\E018"; 
+$icon-name-replace-bg: "\E019"; 
+$icon-name-upscale: "\E01A"; 
+$icon-name-user: "\E01B"; 
 
 
 @function icon-char($filename) {
@@ -92,47 +93,50 @@ $icon-name-user: "\E01A";
 	@if $filename == loading {
 		$char: "\E00C";
 	}
-	@if $filename == male {
+	@if $filename == lock {
 		$char: "\E00D";
 	}
-	@if $filename == menu-close {
+	@if $filename == male {
 		$char: "\E00E";
 	}
-	@if $filename == menu-open {
+	@if $filename == menu-close {
 		$char: "\E00F";
 	}
-	@if $filename == menu {
+	@if $filename == menu-open {
 		$char: "\E010";
 	}
-	@if $filename == minus {
+	@if $filename == menu {
 		$char: "\E011";
 	}
-	@if $filename == plus-circle {
+	@if $filename == minus {
 		$char: "\E012";
 	}
-	@if $filename == plus {
+	@if $filename == plus-circle {
 		$char: "\E013";
 	}
-	@if $filename == prev {
+	@if $filename == plus {
 		$char: "\E014";
 	}
-	@if $filename == racquet {
+	@if $filename == prev {
 		$char: "\E015";
 	}
-	@if $filename == refresh {
+	@if $filename == racquet {
 		$char: "\E016";
 	}
-	@if $filename == remove-bg {
+	@if $filename == refresh {
 		$char: "\E017";
 	}
-	@if $filename == replace-bg {
+	@if $filename == remove-bg {
 		$char: "\E018";
 	}
-	@if $filename == upscale {
+	@if $filename == replace-bg {
 		$char: "\E019";
 	}
-	@if $filename == user {
+	@if $filename == upscale {
 		$char: "\E01A";
+	}
+	@if $filename == user {
+		$char: "\E01B";
 	}
 
 	@return $char;
@@ -184,6 +188,9 @@ $icon-name-user: "\E01A";
 }
 .icon-loading {
 	@include icon(loading);
+}
+.icon-lock {
+	@include icon(lock);
 }
 .icon-male {
 	@include icon(male);

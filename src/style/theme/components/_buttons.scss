@@ -90,6 +90,7 @@
     --bs-btn-close-opacity: 1;
     width: .75rem;
     height: .75rem;
+    z-index: 1;
     &.btn-position {
         position: absolute;
         top: 1.75rem;

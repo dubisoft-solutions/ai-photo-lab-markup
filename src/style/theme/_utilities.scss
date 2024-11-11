@@ -70,15 +70,6 @@ textarea {
     aspect-ratio: 16 / 9;
 }
 
-.two-lines-ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
-
 .rounded-top {
     border-top-right-radius: .625rem!important;
     border-top-left-radius: .625rem!important;
