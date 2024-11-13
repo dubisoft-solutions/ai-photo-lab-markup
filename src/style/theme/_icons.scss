@@ -29,29 +29,28 @@ $icon-name-arrow-down: "\E001";
 $icon-name-arrow-left: "\E002"; 
 $icon-name-arrow-right: "\E003"; 
 $icon-name-arrow-top: "\E004"; 
-$icon-name-basketball: "\E005"; 
-$icon-name-check: "\E006"; 
-$icon-name-circle: "\E007"; 
-$icon-name-clock: "\E008"; 
-$icon-name-close: "\E009"; 
-$icon-name-female: "\E00A"; 
-$icon-name-football: "\E00B"; 
-$icon-name-loading: "\E00C"; 
-$icon-name-lock: "\E00D"; 
-$icon-name-male: "\E00E"; 
-$icon-name-menu-close: "\E00F"; 
-$icon-name-menu-open: "\E010"; 
-$icon-name-menu: "\E011"; 
-$icon-name-minus: "\E012"; 
-$icon-name-plus-circle: "\E013"; 
-$icon-name-plus: "\E014"; 
-$icon-name-prev: "\E015"; 
-$icon-name-racquet: "\E016"; 
-$icon-name-refresh: "\E017"; 
-$icon-name-remove-bg: "\E018"; 
-$icon-name-replace-bg: "\E019"; 
-$icon-name-upscale: "\E01A"; 
-$icon-name-user: "\E01B"; 
+$icon-name-check: "\E005"; 
+$icon-name-circle: "\E006"; 
+$icon-name-clock: "\E007"; 
+$icon-name-close: "\E008"; 
+$icon-name-female: "\E009"; 
+$icon-name-gender: "\E00A"; 
+$icon-name-loading: "\E00B"; 
+$icon-name-lock: "\E00C"; 
+$icon-name-male: "\E00D"; 
+$icon-name-menu-close: "\E00E"; 
+$icon-name-menu-open: "\E00F"; 
+$icon-name-menu: "\E010"; 
+$icon-name-minus: "\E011"; 
+$icon-name-plus-circle: "\E012"; 
+$icon-name-plus: "\E013"; 
+$icon-name-prev: "\E014"; 
+$icon-name-refresh: "\E015"; 
+$icon-name-remove-bg: "\E016"; 
+$icon-name-replace-bg: "\E017"; 
+$icon-name-replace: "\E018"; 
+$icon-name-upscale: "\E019"; 
+$icon-name-user: "\E01A"; 
 
 
 @function icon-char($filename) {
@@ -69,74 +68,71 @@ $icon-name-user: "\E01B";
 	@if $filename == arrow-top {
 		$char: "\E004";
 	}
-	@if $filename == basketball {
+	@if $filename == check {
 		$char: "\E005";
 	}
-	@if $filename == check {
+	@if $filename == circle {
 		$char: "\E006";
 	}
-	@if $filename == circle {
+	@if $filename == clock {
 		$char: "\E007";
 	}
-	@if $filename == clock {
+	@if $filename == close {
 		$char: "\E008";
 	}
-	@if $filename == close {
+	@if $filename == female {
 		$char: "\E009";
 	}
-	@if $filename == female {
+	@if $filename == gender {
 		$char: "\E00A";
 	}
-	@if $filename == football {
+	@if $filename == loading {
 		$char: "\E00B";
 	}
-	@if $filename == loading {
+	@if $filename == lock {
 		$char: "\E00C";
 	}
-	@if $filename == lock {
+	@if $filename == male {
 		$char: "\E00D";
 	}
-	@if $filename == male {
+	@if $filename == menu-close {
 		$char: "\E00E";
 	}
-	@if $filename == menu-close {
+	@if $filename == menu-open {
 		$char: "\E00F";
 	}
-	@if $filename == menu-open {
+	@if $filename == menu {
 		$char: "\E010";
 	}
-	@if $filename == menu {
+	@if $filename == minus {
 		$char: "\E011";
 	}
-	@if $filename == minus {
+	@if $filename == plus-circle {
 		$char: "\E012";
 	}
-	@if $filename == plus-circle {
+	@if $filename == plus {
 		$char: "\E013";
 	}
-	@if $filename == plus {
+	@if $filename == prev {
 		$char: "\E014";
 	}
-	@if $filename == prev {
+	@if $filename == refresh {
 		$char: "\E015";
 	}
-	@if $filename == racquet {
+	@if $filename == remove-bg {
 		$char: "\E016";
 	}
-	@if $filename == refresh {
+	@if $filename == replace-bg {
 		$char: "\E017";
 	}
-	@if $filename == remove-bg {
+	@if $filename == replace {
 		$char: "\E018";
 	}
-	@if $filename == replace-bg {
+	@if $filename == upscale {
 		$char: "\E019";
 	}
-	@if $filename == upscale {
-		$char: "\E01A";
-	}
 	@if $filename == user {
-		$char: "\E01B";
+		$char: "\E01A";
 	}
 
 	@return $char;
@@ -165,9 +161,6 @@ $icon-name-user: "\E01B";
 .icon-arrow-top {
 	@include icon(arrow-top);
 }
-.icon-basketball {
-	@include icon(basketball);
-}
 .icon-check {
 	@include icon(check);
 }
@@ -183,8 +176,8 @@ $icon-name-user: "\E01B";
 .icon-female {
 	@include icon(female);
 }
-.icon-football {
-	@include icon(football);
+.icon-gender {
+	@include icon(gender);
 }
 .icon-loading {
 	@include icon(loading);
@@ -216,9 +209,6 @@ $icon-name-user: "\E01B";
 .icon-prev {
 	@include icon(prev);
 }
-.icon-racquet {
-	@include icon(racquet);
-}
 .icon-refresh {
 	@include icon(refresh);
 }
@@ -227,6 +217,9 @@ $icon-name-user: "\E01B";
 }
 .icon-replace-bg {
 	@include icon(replace-bg);
+}
+.icon-replace {
+	@include icon(replace);
 }
 .icon-upscale {
 	@include icon(upscale);

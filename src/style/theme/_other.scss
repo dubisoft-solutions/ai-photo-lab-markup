@@ -105,6 +105,24 @@
     }
 }
 
+.container-circle {
+    width: 11.813rem;
+    height: 12rem;
+    &.left {
+        border-radius: 250px 250px 0 250px;
+    }
+    &.right {
+        border-radius: 250px 250px 250px 0;
+    }
+    &.blur-effect {
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+    }
+    @include media-breakpoint-down(md) {
+        height: 9.75rem;
+    }
+}
+
 .img-block {
     position: relative;
     width: 100%;
@@ -118,4 +136,10 @@
     height: 28.75rem;
     object-fit: cover;
     border-radius: .625rem;
+}
+
+.img-container {
+    width: 5.25rem;
+    height: 5.25rem;
+    object-fit: cover;
 }

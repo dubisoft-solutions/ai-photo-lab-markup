@@ -137,6 +137,10 @@ textarea {
     background-color: $black;
 }
 
+.bg-dark {
+    background-color: rgba(114, 124, 137, .2)!important;
+}
+
 .text-shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -145,9 +149,34 @@ textarea {
     filter: drop-shadow(0 10px 30px rgba(8, 15, 52, 0.06));
 }
 
-.border-dashed {
+.border-primary-gradient {
     &:hover {
-        border: dashed 1px $blue;
+        border-style: dashed;
+        border-width: 2px;
+        border-image: linear-gradient(45deg, #1254FF, #2EF2FF) 1;
+        border-radius: 250px 250px 0 250px;
+    }
+}
+
+.border-yellow-gradient {
+    &:hover {
+        border-style: dashed;
+        border-width: 2px;
+        border-image: linear-gradient(45deg, #FFEA2A, #FFF8B7) 1;
+        border-radius: 250px 250px 250px 0;
+    }
+}
+
+.border-primary-hover {
+    &:hover {
+        background: $gradient-dark;
+        border: 2px dashed $blue;
+    }
+}
+.border-warning-hover {
+    &:hover {
+        background: $gradient-yellow;
+        border: 2px dashed $yellow;
     }
 }
 
