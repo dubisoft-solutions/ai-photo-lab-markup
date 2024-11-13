@@ -37,14 +37,43 @@
     background: transparent;
     border-radius: 1.875rem;
     border: 1px solid $dark-gray;
+    border-color: $dark-gray!important;
     padding: .7rem 1.5rem;
-    &:focus, &:hover, &:active {
+    @include media-breakpoint-down(lg) {
+        padding: .625rem .85rem;
+    }
+    &:focus,
+    &:hover, 
+    &:active {
+        background: transparent;
+        border: 1px solid $dark-gray;
+    }
+}
+
+.btn-check {
+    &:checked+label.btn-outline-muted  {
         background:$gradient-blue;
         color: $white!important;
         border: 0;
+
+        padding: calc(.7rem + 1px)  calc(1.5rem + 1px);
+        @include media-breakpoint-down(lg) {
+            padding: calc(.625rem + 1px) calc(.85rem + 1px);
+        }
     }
-    @include media-breakpoint-down(lg) {
-        padding: .625rem .85rem;
+    &.btn-toggler {
+        &+label.btn-outline-muted  {
+            padding: .38rem .85rem;
+            @include media-breakpoint-down(lg) {
+                padding: .38rem .85rem;
+            }
+        }
+        &:checked+label.btn-outline-muted  {
+            padding: calc(.38rem + 1px) calc(.85rem + 1px);
+            @include media-breakpoint-down(lg) {
+                padding: calc(.38rem + 1px) calc(.85rem + 1px);
+            }
+        }
     }
 }
 
@@ -60,16 +89,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-.btn-check+.btn:hover {
-    background: $gradient-blue;
-}
-
-.btn-group-vertical>.btn-check:checked+.btn, .btn-group-vertical>.btn-check:focus+.btn, .btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn-check:checked+.btn, .btn-group>.btn-check:focus+.btn, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
-    background: $gradient-blue;
-    color: $white;
-    border-color: $blue;
 }
 
 .btn-link {

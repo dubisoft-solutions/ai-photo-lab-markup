@@ -198,3 +198,15 @@ textarea {
         width: 33%;
     }
 }
+
+// invisible scroll bar
+.invisible-scrollbar {
+    overflow-y: auto;
+    white-space: nowrap;            /* Prevents line breaks */
+    scrollbar-width: none;          /* Firefox: Hide scrollbar */
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;                  /* Chrome, Safari, Edge: Hide scrollbar */
+}
+// ----
