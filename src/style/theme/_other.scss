@@ -119,6 +119,7 @@
         -webkit-filter: blur(4px);
     }
     @include media-breakpoint-down(md) {
+        width: 9.563rem;
         height: 9.75rem;
     }
 }

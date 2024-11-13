@@ -38,9 +38,9 @@
     border-radius: 1.875rem;
     border: 1px solid $dark-gray;
     padding: .7rem 1.5rem;
-    &:focus, &:hover {
+    &:focus, &:hover, &:active {
         background:$gradient-blue;
-        color: $white;
+        color: $white!important;
         border: 0;
     }
     @include media-breakpoint-down(lg) {
