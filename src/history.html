@@ -24,48 +24,43 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2 btn-groups mb-4 pb-1 d-none">
-                        <div class="btn-group mb-4" role="group" aria-label="Basic checkbox toggle button group">
-                            <div class="owl-carousel owl-theme">
-                                <div class="item active">
-                                    <div class="col">
-                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                                        <label class="btn btn-outline-muted rounded-pill mx-1 fs-10" for="btncheck1"><span class="d-grid">
-                                            <img src="img/filter.svg" alt="Filter"></span>
-                                        </label>
-                                    </div>
+                    <div class="col-lg-8 offset-lg-2 btn-groups mb-4 pb-1">
+                        <div class="categories-filter d-flex">
+                            <div class="filter-toggler flex-shrink-0">
+                                <input type="checkbox" class="btn-check" id="categories-filter-toggler" autocomplete="off">
+                                <label class="btn mx-1 fs-10" for="categories-filter-toggler"><span class="d-grid">
+                                    <img src="img/filter.svg" alt="Filter"></span>
+                                </label>
+                            </div>
+                            <div class="position-relative flex-grow-1">
+                                <div class="filters-group position-absolute mw-100 d-flex flex-nowrap overflow-y-auto">
+                                    
+                                        <div class="filter-item">
+                                            <input type="checkbox" name="filter-1" class="btn-check" id="filter1" autocomplete="off">
+                                            <label class="btn btn-outline-muted mx-1 fs-10 text-nowrap" for="filter1">{{item.name}}</label>
+                                        </div>
+
+                                        <div class="filter-item">
+                                            <input type="checkbox" name="filter-2" class="btn-check" id="filter2" autocomplete="off">
+                                            <label class="btn btn-outline-muted mx-1 fs-10 text-nowrap" for="filter2">{{item.name}}</label>
+                                        </div>
+
+                                        <div class="filter-item">
+                                            <input type="checkbox" name="filter-3" class="btn-check" id="filter3" autocomplete="off">
+                                            <label class="btn btn-outline-muted mx-1 fs-10 text-nowrap" for="filter3">{{item.name}}</label>
+                                        </div>
+
+                                        <div class="filter-item">
+                                            <input type="checkbox" name="filter-4" class="btn-check" id="filter4" autocomplete="off">
+                                            <label class="btn btn-outline-muted mx-1 fs-10 text-nowrap" for="filter4">{{item.name}}</label>
+                                        </div>
+
+                                        <div class="filter-item">
+                                            <input type="checkbox" name="filter-5" class="btn-check" id="filter5" autocomplete="off">
+                                            <label class="btn btn-outline-muted mx-1 fs-10 text-nowrap" for="filter5">{{item.name}}</label>
+                                        </div>
                                 </div>
-                                <div class="item">
-                                    <div class="col">
-                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                                        <label class="btn btn-outline-muted rounded-pill mx-1 fs-10" for="btncheck2">Future Baby</label>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col">
-                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                                        <label class="btn btn-outline-muted rounded-pill mx-1 fs-10" for="btncheck3">Comic Book</label>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col">
-                                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                                        <label class="btn btn-outline-muted rounded-pill mx-1 fs-10" for="btncheck4">Video Face Swap</label>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col">
-                                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-                                        <label class="btn btn-outline-muted rounded-pill mx-1 fs-10" for="btncheck5">Fantasy Art</label>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col">
-                                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
-                                        <label class="btn btn-outline-muted rounded-pill mx-1 fs-10" for="btncheck6">Disney Character</label>
-                                    </div>
-                                </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 offset-lg-2 mx-auto">
