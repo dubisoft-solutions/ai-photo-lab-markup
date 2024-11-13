@@ -38,10 +38,7 @@
     border-radius: 1.875rem;
     border: 1px solid $dark-gray;
     border-color: $dark-gray!important;
-    padding: .7rem 1.5rem;
-    @include media-breakpoint-down(lg) {
-        padding: .625rem .85rem;
-    }
+    padding: .625rem .85rem;
     &:focus,
     &:hover, 
     &:active {
@@ -51,27 +48,44 @@
 }
 
 .btn-check {
+    &+label.btn-outline-muted {
+        border: 0!important;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            border: 1px solid $dark-gray;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &:focus,
+        &:hover, 
+        &:active {
+            border: 0;
+        }
+    }
     &:checked+label.btn-outline-muted  {
         background:$gradient-blue;
         color: $white!important;
-        border: 0;
-
-        padding: calc(.7rem + 1px)  calc(1.5rem + 1px);
-        @include media-breakpoint-down(lg) {
-            padding: calc(.625rem + 1px) calc(.85rem + 1px);
+        &::before {
+            border: 0;
         }
     }
     &.btn-toggler {
-        &+label.btn-outline-muted  {
-            padding: .38rem .85rem;
-            @include media-breakpoint-down(lg) {
-                padding: .38rem .85rem;
-            }
+        &+label.btn-outline-muted {
+            padding: .406rem .85rem;
         }
-        &:checked+label.btn-outline-muted  {
-            padding: calc(.38rem + 1px) calc(.85rem + 1px);
-            @include media-breakpoint-down(lg) {
-                padding: calc(.38rem + 1px) calc(.85rem + 1px);
+        &+label .icon-toggler {
+            width: 1.125rem;
+            @include icon(filter-cancel);
+        }
+        &:checked+label {
+            .icon-toggler {
+                @include icon(filter-done);
             }
         }
     }
