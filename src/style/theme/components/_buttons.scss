@@ -41,7 +41,7 @@
     &:focus, &:hover {
         background:$gradient-blue;
         color: $white;
-        border-color: transparent;
+        border: 0;
     }
     @include media-breakpoint-down(lg) {
         padding: .625rem .85rem;
