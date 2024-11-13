@@ -38,9 +38,10 @@
     border-radius: 1.875rem;
     border: 1px solid $dark-gray;
     padding: .7rem 1.5rem;
-    &:focus {
+    &:focus, &:hover {
         background:$gradient-blue;
         color: $white;
+        border-color: transparent;
     }
     @include media-breakpoint-down(lg) {
         padding: .625rem .85rem;
