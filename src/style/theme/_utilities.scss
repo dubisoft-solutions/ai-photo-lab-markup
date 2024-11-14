@@ -29,13 +29,18 @@ textarea {
     height: 1.625rem;
 }
 
-.icon-refresh-style {
+.icon-edit-style {
     background-color: $light-gray;
     width: 1.938rem;
     height: 1.938rem;
     position: absolute;
     top: 1.125rem;
-    left: 1.125rem;
+    &.left {
+        left: 1.125rem;
+    }
+    &.right {
+        right: 1.125rem;
+    }
 }
 
 .icon-gender-circle {
@@ -49,14 +54,11 @@ textarea {
 .icon-edit-circle {
     width: 3.125rem;
     height: 3.125rem;
+    color: $dark-gray;
+    cursor: pointer;
     &:hover {
         background: $gradient-blue;
-    }
-    .icon {
-        color: $dark-gray;
-        &:hover {
-            color: $white;
-        }
+        color: $white;
     }
 }
 
