@@ -158,17 +158,24 @@
 
                 <div class="row mx-auto mb-5 pb-2">
                     <div class="col-xl-8 offset-xl-2 text-center d-inline-flex justify-content-center">
-                        <div class="text-center px-2">
-                            <div class="icon-gender-circle bg-dark d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
-                                <icon class="icon icon-male fs-2 text-primary"></icon>
-                            </div>
-                            <p>Male</p>
+                        <div class="gender-picker px-2">
+                            <input type="radio" name="gender" class="btn-check" id="genderMale" autocomplete="off">
+                            <label class="fs-10 text-nowrap" for="genderMale">
+                                <div class="icon-gender-circle bg-dark d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                                    <icon class="icon icon-male fs-2 text-primary"></icon>
+                                </div>
+                                <p>Male</p>
+                            </label>
                         </div>
-                        <div class="text-center px-2">
-                            <div class="icon-gender-circle bg-dark d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
-                                <icon class="icon icon-female fs-2 text-danger"></icon>
-                            </div>
-                            <p>Female</p>
+
+                        <div class="gender-picker px-2">
+                            <input type="radio" name="gender" class="btn-check" id="genderFemale" autocomplete="off">
+                            <label class="fs-10 text-nowrap" for="genderFemale">
+                                <div class="icon-gender-circle bg-dark d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                                    <icon class="icon icon-female fs-2 text-danger"></icon>
+                                </div>
+                                <p>Female</p>
+                            </label>
                         </div>
                     </div>
                 </div>

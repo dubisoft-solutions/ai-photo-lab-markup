@@ -145,3 +145,20 @@
     height: 5.25rem;
     object-fit: cover;
 }
+
+.gender-picker {
+    .icon-gender-circle {
+        cursor: pointer;
+        width: 6.063rem;
+        height: 6.063rem;
+        &:hover {
+            border: 1px solid $blue;
+        }
+    }
+    input:checked+label {
+        .icon-gender-circle {
+            border: 1px solid $blue;
+            background: $gradient-dark;
+        }
+    }
+}
