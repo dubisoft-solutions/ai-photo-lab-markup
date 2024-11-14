@@ -14,6 +14,7 @@ $(function() {
     carouselsSetup(document.documentElement.getAttribute("dir") == 'rtl');
     initRecaptcha('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', ".grecaptcha");
     initScrollToTopBtnHandler();
+    initDropZone();
 });
 
 function initSelectPicker() {
@@ -330,4 +331,52 @@ function initScrollToTopBtnHandler() {
     })
 
     updateScrollToTopMarkerState();
+}
+
+
+function initDropZone() {
+    const dropZones = document.querySelectorAll('.drop-zone');
+    dropZones.forEach(dropZone => {
+        const dropInstructionsBlock = dropZone.querySelector('.drop-instructions-block');
+        const previewBlock = dropZone.querySelector('.preview-block');
+        const loadingBlock = dropZone.querySelector('.loading-block');
+        const btnResetSelection = dropZone.querySelector('.btn-reset-selection');
+
+        const fileInput =  dropZone.querySelector('.file-input');
+        if (!fileInput) {
+            console.error("drop zone has no file input")
+            return;
+        }
+
+        dropInstructionsBlock.addEventListener('click', e => {
+            console.log('click')
+            fileInput.click();
+        });
+
+
+        fileInput.addEventListener('change', () => {
+            const file = fileInput.files[0];
+            dropInstructionsBlock.classList.toggle('d-none', !!file);
+            loadingBlock.classList.toggle('d-none', !file);
+            previewBlock.classList.add('d-none');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    loadingBlock.classList.add('d-none');
+                    previewBlock.classList.remove('d-none')
+
+                    previewBlock.querySelector('img').src = e.target.result;
+
+                };
+                reader.readAsDataURL(file);
+            }
+        })
+
+        btnResetSelection.addEventListener('click', () => {
+            console.log("rest!")
+            fileInput.value = "";
+            fileInput.dispatchEvent(new Event("change"));
+        })
+    });
 }

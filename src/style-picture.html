@@ -20,7 +20,7 @@
                                     </div>
                                     <h2 class="text-capitalize scroll-to-top-marker mb-lg-3 mb-0">
                                         Style Pictures
-                                        <span class="d-block fs-8 text-muted text-transform-none">Choose your picture and style it</span>
+                                        <span class="d-block fs-8 mt-1 text-muted text-transform-none">Choose your picture and style it</span>
                                     </h2>
                                 </div>
                                 <span class="d-grid ms-3"><img src="img/step-1.svg" alt="Step 1"></span>
@@ -31,14 +31,29 @@
 
                 <div class="row justify-content-center text-center mb-lg-5 mb-4">
                     <div class="col-lg-4">
-                        <div class="container-md d-inline-flex align-items-center justify-content-center p-5 text-bg-dark bg-dark border-primary-hover rounded-3 text-center cursor-pointer position-relative">
-                            <div class="d-block">
-                                <span class="mb-4"><icon class="icon icon-plus text-white fs-8"></icon></span>
-                                <p class="text-white">Open Image</p>
+                        <div class="drop-zone container-md">
+                            <input class="file-input" type="file" id="imagePicker" accept="image/*" hidden>
+
+                            <div class="drop-zone-container blue-rectangle-style drop-instructions-block cursor-pointer d-flex justify-content-center align-items-center">
+                                <div>
+                                    <span class="mb-4"><icon class="icon icon-plus text-white fs-4"></icon></span>
+                                    <p class="text-white fs-8">Open Image</p>
+                                </div>
                             </div>
-                            <div class="icon-refresh-style rounded-circle d-flex justify-content-center align-items-center me-3 mt-1">
-                                <icon class="icon icon-refresh text-dark fs-8 d-grid"></icon>
+
+                            <div class="drop-zone-container preview-block d-flex d-none justify-content-center align-items-center">
+                                <div class="btn-reset-selection cursor-pointer rounded-circle d-flex justify-content-center align-items-center me-3 mt-1">
+                                    <icon class="icon icon-refresh cursor-pointer text-dark fs-8 d-grid"></icon>
+                                </div>
+                                <img src="#" alt="preview" class="preview w-100 h-100 object-fit-contain">
                             </div>
+
+
+                            <div class="drop-zone-container loading-block d-flex d-none justify-content-center align-items-center">
+                                <p>loading...</p>
+                            </div>
+                           
+                            
                         </div>
                     </div>
                 </div>
