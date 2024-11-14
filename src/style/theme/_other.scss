@@ -128,15 +128,16 @@
     position: relative;
     width: 100%;
     max-width: 400px;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-}
-
-.img-block img {
-    width: 100%;
-    height: 28.75rem;
-    object-fit: cover;
-    border-radius: .625rem;
+    &.blur-effect {
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+    }
+    img {
+        width: 100%;
+        height: 28.75rem;
+        object-fit: cover;
+        border-radius: .625rem;
+    }
 }
 
 .img-container {
