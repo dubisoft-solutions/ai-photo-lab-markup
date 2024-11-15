@@ -7,16 +7,23 @@
     border-radius: 1.25rem;
     border: 2px solid transparent;
     overflow: hidden;
-    &:hover, &:focus {
-        border: 2px solid $blue;
-    }
+    
     &.height-sm {
         height: 9.5rem;
     }
     &.height-md {
         height: 11.875rem;
     }
-    
+}
+
+.input-primary-style {
+    &:checked+label,
+    &+label:hover {
+        border: 2px solid $blue;
+    }
+    &+label {
+        cursor: pointer;
+    }
 }
 
 .lock-item {
