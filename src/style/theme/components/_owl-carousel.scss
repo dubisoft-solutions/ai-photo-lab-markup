@@ -4,4 +4,10 @@
         /*rtl:ignore*/
         direction: rtl !important;
     }
+    &.stage-padding-left-0 {
+        .owl-stage {
+            padding-left: 0 !important;
+            padding-right: 80px!important;
+        }
+    }
 }

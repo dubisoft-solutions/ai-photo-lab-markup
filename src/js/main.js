@@ -117,7 +117,7 @@ function carouselsSetup(userRtl) {
     $(function() {
         if ($('.style-picture .owl-carousel').length > 0) {
             $('.style-picture .owl-carousel').owlCarousel({
-                loop: true,
+                loop: false,
                 rtl: rtl,
                 margin: 10,
                 responsiveClass: true,
@@ -125,23 +125,21 @@ function carouselsSetup(userRtl) {
                 autoplayTimeout: 3000,
                 nav: false,
                 dots: false,
+                center: false,
+                stagePadding: 40,
 
                 responsive: {
                     0: {
-                        items: 3,
-                        stagePadding: 10
+                        items: 2,
                     },
                     576: {
-                        items: 4,
-                        stagePadding: 10
+                        items: 3,
                     },
                     768: {
                         items: 4,
-                        stagePadding: 10
                     },
                     1200: {
                         items: 5,
-                        stagePadding: 46
                     },
                     1400: {
                         items: 8
