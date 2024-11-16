@@ -149,7 +149,7 @@ $navbar-height-sm: 3.125rem;
             background-color: $black;
             padding-top: 1rem;
             &.show {
-                background-color: $black;
+                background: linear-gradient(176deg, rgba(15,18,23,1) 0%, rgba(15,18,23,0.83) 62%);
                 color: $dark-gray!important;
             }
             .dropdown-item {
@@ -163,6 +163,13 @@ $navbar-height-sm: 3.125rem;
                     background-color: $black;
                     border-radius: 0;
                 }
+            }
+            @include media-breakpoint-up(md) {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 90px;
+                background: linear-gradient(176deg, rgba(15,18,23,1) 0%, rgba(15,18,23,0.83) 62%);
             }
         }
     }

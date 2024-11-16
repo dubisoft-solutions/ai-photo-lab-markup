@@ -173,10 +173,19 @@
             border: 1px solid $blue;
         }
     }
+    .gender-label {
+        cursor: pointer;
+        &:hover {
+            color: $white;
+        }
+    }
     input:checked+label {
         .icon-gender-circle {
             border: 1px solid $blue;
             background: $gradient-dark;
+        }
+        .gender-label {
+            color: $white;
         }
     }
 }
